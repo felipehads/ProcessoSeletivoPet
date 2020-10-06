@@ -83,6 +83,7 @@ const navigator = createStackNavigator({
   initialRouteName: 'FirstPage',
   defaultNavigationOptions: {
     title: '',
+    headerShown: false
     // headerStyle:{
     //   backgroundColor: "#00b3fe"
     // }

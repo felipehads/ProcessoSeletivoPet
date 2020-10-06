@@ -4,9 +4,7 @@ import {StyleSheet, Image, View, Text, TouchableOpacity} from 'react-native';
 const HeaderBack = ({textoPrincipal, navigation}) => {
     return(
         <View style={styles.header}>
-            <TouchableOpacity onPress = {navigation}>
-                <Image source={require('../../assets/startIcon.png')}/>
-            </TouchableOpacity>
+            <Image source={require('../../assets/startIcon.png')}/>
             <Text style={styles.headerText}>{textoPrincipal}</Text>
         </View>
     )
@@ -16,14 +14,11 @@ const styles = StyleSheet.create({
     header: {
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-between",
-        marginTop: 10,
+        marginTop: 40,
         marginBottom: 25,
-        marginHorizontal:5
     },
     headerText: {
-        fontSize: 30,
-        textAlign: "justify",
+        fontSize: 28,
         fontWeight: "bold",
         color: "pink"
     }

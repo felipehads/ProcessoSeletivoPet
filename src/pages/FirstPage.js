@@ -5,7 +5,7 @@ import HeaderStart from '../components/HeaderStart';
 const FirstPage = ({navigation}) => {
     return(
         <View style={styles.container}>
-            <View>
+            <View style = {styles.headerContainer}>
                 <HeaderStart textoPrincipal="Bem vindo, selecione sua
                 área de atuação:" navigation = {() => navigation.navigate("")}/>
             </View>
@@ -48,10 +48,15 @@ const FirstPage = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
+        height: "100%",
+        width: "100%",
         flexDirection: "column",
-        marginHorizontal:35,
-        marginBottom:25,
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "#ffffff"
+    },
+    headerContainer:{
+        width: "100%",
+        flexDirection: "row",
     },
     buttonsContainer:{
         flexDirection: "row",

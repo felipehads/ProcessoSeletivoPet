@@ -14,11 +14,12 @@ const styles = StyleSheet.create({
     header: {
         flexDirection: "row",
         alignItems: "center",
+        width: "100%",
         marginTop: 40,
         marginBottom: 25,
     },
     headerText: {
-        fontSize: 28,
+        fontSize: 24,
         fontWeight: "bold",
         color: "pink"
     }

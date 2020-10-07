@@ -14,11 +14,10 @@ const HeaderBack = ({textoPrincipal, navigation}) => {
 
 const styles = StyleSheet.create({
     header: {
-        width: "100%",
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        marginTop: 10,
+        marginTop: 40,
         marginBottom: 25,
         marginHorizontal:5
     },

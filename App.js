@@ -68,7 +68,7 @@ const navigator = createStackNavigator({
   },
   Q1: {
     screen: Q1,
-    navigationOptions: ({navigation}) => ({})
+    navigationOptions: ({navigation, value1}) => ({})
   },
   Q2: {
     screen: Q2,

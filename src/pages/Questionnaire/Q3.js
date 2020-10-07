@@ -16,6 +16,8 @@ export default ({navigation}) => {
         <Text style={styles.text}>
             3- Qual a idade da
             paciente?
+            {navigation.getParam('value1', 'default')}
+            {navigation.getParam('value2', 'default')}
         </Text>
         <Text style={styles.obs}>
             OBS.:

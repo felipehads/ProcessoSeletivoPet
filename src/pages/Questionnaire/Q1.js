@@ -33,7 +33,9 @@ export default ({navigation}) => {
                         SIM
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q2')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q2', {
+                    value1 : '1'
+                })}>
                     <Text style={styles.buttonText}>
                         NÃO
                     </Text>

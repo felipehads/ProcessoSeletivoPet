@@ -8,8 +8,7 @@ const Homepage = ({navigation}) => {
         <View style={styles.container}>
             <View style={styles.header}>
                 <View>
-                    <HeaderStart textoPrincipal="Olá, profissional da saúde!
-                    Selecione um dos menus
+                    <HeaderStart textoPrincipal="Olá, profissional da saúde! Selecione um dos menus
                     para começarmos" navigation = {() => navigation.navigate("")}/>
                 </View>
             </View> 
@@ -31,16 +30,15 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column",
         justifyContent: "space-between",
-        marginHorizontal:10,
-        marginBottom:25
+        backgroundColor: "#ffffff",
     },
     header: {
+        width: "100%",
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
         marginTop: 10,
         marginBottom: 25,
-        marginHorizontal:5
     },
     text: {
         textAlign: "right",

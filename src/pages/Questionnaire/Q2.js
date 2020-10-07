@@ -30,14 +30,21 @@ export default ({navigation}) => {
                         SIM
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q3')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q3', {
+                    value1: navigation.getParam('value1', 'default'),
+                    value2: '1'
+                }
+                )}>
                     <Text style={styles.buttonText}>
                         NÃO
                     </Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.lastButtonContainer}>
-                <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('Q3')}>
+                <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('Q3', {
+                     value1: navigation.getParam('value1', 'default'),
+                     value2: '2'
+                })}>
                     <Text style={styles.buttonText}>
                         DESCONHECIDO
                     </Text>

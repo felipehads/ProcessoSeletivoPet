@@ -1,12 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+import { color } from 'react-native-reanimated';
 import HeaderBack from '../components/HeaderBack';
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
-            <View>
+            <View style={styles.headerContainer}>
                 <HeaderBack textoPrincipal="SOBRE O APLICATIVO" navigation = {() => navigation.navigate("Homepage")}/>
             </View>
             <View>
@@ -62,7 +63,10 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:10
+        marginHorizontal:10,
+    },
+    headerContainer:{
+        backgroundColor: "#ffffff",
     },
     bigText:{
         fontSize:25,

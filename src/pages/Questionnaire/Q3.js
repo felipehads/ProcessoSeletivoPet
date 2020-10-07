@@ -16,8 +16,6 @@ export default ({navigation}) => {
         <Text style={styles.text}>
             3- Qual a idade da
             paciente?
-            {navigation.getParam('value1', 'default')}
-            {navigation.getParam('value2', 'default')}
         </Text>
         <Text style={styles.obs}>
             OBS.:
@@ -32,7 +30,11 @@ export default ({navigation}) => {
         </Text>
         
         <RNPickerSelect
-            onValueChange={(value) => console.log(value)}
+            onValueChange={(value) => navigation.navigate('Q4', {
+                value1: navigation.getParam('value1', 'default'),
+                value2: navigation.getParam('value2', 'default'),
+                value3: value
+            })}
             items={[
                 { label: '35 anos', value: '35' },
                 { label: '36 anos', value: '36' },

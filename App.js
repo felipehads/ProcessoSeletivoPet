@@ -15,6 +15,17 @@ import FirstPage from './src/pages/FirstPage';
 import Q1 from './src/pages/Questionnaire/Q1';
 import Q2 from './src/pages/Questionnaire/Q2';
 import Q3 from './src/pages/Questionnaire/Q3';
+import Q4 from './src/pages/Questionnaire/Q4';
+import Q4sub1 from './src/pages/Questionnaire/Q4sub1';
+import Q4sub2 from './src/pages/Questionnaire/Q4sub2';
+import Q5 from './src/pages/Questionnaire/Q5';
+import Q5sub1 from './src/pages/Questionnaire/Q5sub1';
+import Q5sub2 from './src/pages/Questionnaire/Q5sub2';
+import Q6 from './src/pages/Questionnaire/Q6';
+import Q7 from './src/pages/Questionnaire/Q7';
+import Q8 from './src/pages/Questionnaire/Q8';
+import Results from './src/pages/Questionnaire/Results';
+
 
 
 const navigator = createStackNavigator({
@@ -68,7 +79,7 @@ const navigator = createStackNavigator({
   },
   Q1: {
     screen: Q1,
-    navigationOptions: ({navigation, value1}) => ({})
+    navigationOptions: ({navigation}) => ({})
   },
   Q2: {
     screen: Q2,
@@ -77,7 +88,47 @@ const navigator = createStackNavigator({
   Q3: {
     screen: Q3,
     navigationOptions: ({navigation}) => ({})
-  }
+  },
+  Q4: {
+    screen: Q4,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q4sub1: {
+    screen: Q4sub1,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q4sub2: {
+    screen: Q4sub2,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q5: {
+    screen: Q5,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q5sub1: {
+    screen: Q5sub1,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q5sub2: {
+    screen: Q5sub2,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q6: {
+    screen: Q6,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q7: {
+    screen: Q7,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Q8: {
+    screen: Q8,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Results: {
+    screen: Results,
+    navigationOptions: ({navigation}) => ({})
+  },
 },
 {
   initialRouteName: 'FirstPage',

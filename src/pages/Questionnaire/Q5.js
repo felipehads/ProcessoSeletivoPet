@@ -8,7 +8,7 @@ export default ({navigation}) => {
     return(
     <View style={styles.container}>
         <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q1")}/>
+            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q4")}/>
         </View>
         <View>
             <Text style={styles.bigText}>
@@ -18,19 +18,19 @@ export default ({navigation}) => {
                 5 - A paciente já fez biópsia de mama?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('') }>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5sub1') }>
                     <Text style={styles.buttonText}>
                         SIM
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q6')}>
                     <Text style={styles.buttonText}>
                         NÃO
                     </Text>
                 </TouchableOpacity>
             </View>
             <View style={styles.lastButtonContainer}>
-                <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('Q6')}>
                     <Text style={styles.buttonText}>
                         DESCONHECIDO
                     </Text>

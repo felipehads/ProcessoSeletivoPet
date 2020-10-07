@@ -8,7 +8,7 @@ export default ({navigation}) => {
     return(
     <View style={styles.container}>
         <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q3")}/>
+            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q4")}/>
         </View>
         <View>
             <Text style={styles.bigText}>
@@ -18,32 +18,32 @@ export default ({navigation}) => {
                 4-Qual a sub-etnia/sub-raça da paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Chinesa
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Japonesa
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Filipina
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Havaiana
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Outra ilha do Pacífico
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Outra etnia asiática
                     </Text>

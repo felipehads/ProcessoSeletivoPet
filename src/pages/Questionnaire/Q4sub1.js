@@ -18,12 +18,12 @@ export default ({navigation}) => {
                 4.1-Qual a sub-etnia/sub-raça da paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Nascida no EUA
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Nascida fora do EUA
                     </Text>

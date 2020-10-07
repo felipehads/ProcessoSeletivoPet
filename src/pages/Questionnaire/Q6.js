@@ -8,7 +8,7 @@ export default ({navigation}) => {
     return(
     <View style={styles.container}>
         <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q4")}/>
+            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q5")}/>
         </View>
         <View>
             <Text style={styles.bigText}>
@@ -37,7 +37,7 @@ export default ({navigation}) => {
             
         </View>
         <View>
-            <FooterHome navigation = {() => navigation.navigate("Q4")}/>
+            <FooterHome navigation = {() => navigation.navigate("Homepage")}/>
         </View>
     </View>
     )

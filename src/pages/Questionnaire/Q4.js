@@ -18,32 +18,32 @@ export default ({navigation}) => {
                 4-Qual a etnia/raça da paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Desconhecido
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Branca
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Afro-americana
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q4sub1')}>
                     <Text style={styles.buttonText}>
                         Hispânica/Latina
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
                     <Text style={styles.buttonText}>
                         Nativo-americano ou nativo do Alasca
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q4sub2')}>
                     <Text style={styles.buttonText}>
                         Asiática
                     </Text>

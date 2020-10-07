@@ -8,7 +8,7 @@ export default ({navigation}) => {
     return(
     <View style={styles.container}>
         <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q4")}/>
+            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q5")}/>
         </View>
         <View>
             <Text style={styles.bigText}>
@@ -22,12 +22,12 @@ export default ({navigation}) => {
                 paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5sub2')}>
                     <Text style={styles.buttonText}>
                         Apenas uma
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5sub2')}>
                     <Text style={styles.buttonText}>
                         Duas ou mais
                     </Text>

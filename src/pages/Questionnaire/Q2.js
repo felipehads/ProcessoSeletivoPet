@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, Image, Alert} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import HeaderBack from '../../components/HeaderBack';
 import FooterHome from '../../components/FooterHome';
@@ -25,7 +25,8 @@ export default ({navigation}) => {
                 câncer de mama?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q3')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => Alert.alert("Atenção!",
+                "Outras ferramentas podem ser mais apropriadas para cálculo de risco em pacientes portadoras de mutações genéticas ou outras síndromes relacionadas com o aumento de risco para desenvolver câncer de mama.")}>
                     <Text style={styles.buttonText}>
                         SIM
                     </Text>

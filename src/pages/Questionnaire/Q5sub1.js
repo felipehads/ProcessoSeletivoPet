@@ -8,44 +8,28 @@ export default ({navigation}) => {
     return(
     <View style={styles.container}>
         <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q3")}/>
+            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q4")}/>
         </View>
         <View>
             <Text style={styles.bigText}>
-                Dados Demográficos
+                Parente e Histórico 
+                    Familiar
             </Text>
             <Text style={styles.text}>
-                4-Qual a sub-etnia/sub-raça da paciente?
+                5.1-Quantas biópsias de 
+                mama (positiva ou 
+                negativa) tem a
+                paciente?
             </Text>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('')}>
                     <Text style={styles.buttonText}>
-                        Chinesa
+                        Apenas uma
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
                     <Text style={styles.buttonText}>
-                        Japonesa
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Filipina
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Havaiana
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Outra ilha do Pacífico
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Outra etnia asiática
+                        Duas ou mais
                     </Text>
                 </TouchableOpacity>
             </View>

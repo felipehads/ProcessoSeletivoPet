@@ -8,44 +8,31 @@ export default ({navigation}) => {
     return(
     <View style={styles.container}>
         <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q3")}/>
+            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q1")}/>
         </View>
         <View>
             <Text style={styles.bigText}>
-                Dados Demográficos
+                Paciente e Histórico Familiar
             </Text>
             <Text style={styles.text}>
-                4-Qual a sub-etnia/sub-raça da paciente?
+                5 - A paciente teve pelo menos uma biópsia de mama com hiperplasia atípica?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('') }>
                     <Text style={styles.buttonText}>
-                        Chinesa
+                        SIM
                     </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
                     <Text style={styles.buttonText}>
-                        Japonesa
+                        NÃO
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
+            </View>
+            <View style={styles.lastButtonContainer}>
+                <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('')}>
                     <Text style={styles.buttonText}>
-                        Filipina
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Havaiana
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Outra ilha do Pacífico
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('')}>
-                    <Text style={styles.buttonText}>
-                        Outra etnia asiática
+                        DESCONHECIDO
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -54,7 +41,10 @@ export default ({navigation}) => {
         <View>
             <FooterHome navigation = {() => navigation.navigate("Homepage")}/>
         </View>
+
+        
     </View>
+
     )
 }
 
@@ -77,22 +67,33 @@ const styles = StyleSheet.create({
         fontWeight: "600"
     },
     buttonsContainer:{
-        flexDirection:"column",
+        flexDirection:"row",
         justifyContent: "space-around",
-        alignItems: "center"
+        marginVertical: 25
     },
     buttonsEach:{
         borderWidth:3,
         borderColor: "pink",
         borderRadius: 10,
-        width: 300,
-        padding: 8,
+        height: 70,
+        width: 150,
         justifyContent: "center",
-        marginVertical: 2
     },
     buttonText:{
-        textAlign: "left",
-        fontSize: 22,
+        textAlign: "center",
+        fontSize: 28,
         fontWeight: "bold"
+    },
+    lastButtonContainer:{
+        alignItems: "center",
+        marginBottom: 15,
+    },
+    lastButton:{
+        borderWidth:3,
+        borderColor: "pink",
+        borderRadius: 10,
+        height: 70,
+        width: 250,
+        justifyContent: "center"
     }
 })

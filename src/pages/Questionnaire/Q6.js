@@ -18,17 +18,47 @@ export default ({navigation}) => {
                 6- Qual a idade da paciente no momento da menarca (primeira menstruação)?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q7')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q7', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: navigation.getParam('value5', ''),
+                    value6: navigation.getParam('value6', ''),
+                    value7: navigation.getParam('value7', ''),
+                    value8: navigation.getParam('value8', ''),
+                    value9: '2'
+                })}>
                     <Text style={styles.buttonText}>
                         Entre 7 e 11 anos
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q7')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q7', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: navigation.getParam('value5', ''),
+                    value6: navigation.getParam('value6', ''),
+                    value7: navigation.getParam('value7', ''),
+                    value8: navigation.getParam('value8', ''),
+                    value9: '1'
+                })}>
                     <Text style={styles.buttonText}>
                         Entre 12 e 13 anos
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q7')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q7', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: navigation.getParam('value5', ''),
+                    value6: navigation.getParam('value6', ''),
+                    value7: navigation.getParam('value7', ''),
+                    value8: navigation.getParam('value8', ''),
+                    value9: '0'
+                })}>
                     <Text style={styles.buttonText}>
                         Maior ou igual a 14 anos
                     </Text>

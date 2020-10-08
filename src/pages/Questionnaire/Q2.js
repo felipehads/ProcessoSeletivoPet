@@ -43,7 +43,7 @@ export default ({navigation}) => {
             </View>
             <View style={styles.lastButtonContainer}>
                 <TouchableOpacity style={styles.lastButton} onPress={() => navigation.navigate('Q3', {
-                     value1: navigation.getParam('value1', 'default'),
+                     value1: navigation.getParam('value1', ''),
                      value2: '2'
                 })}>
                     <Text style={styles.buttonText}>

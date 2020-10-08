@@ -18,32 +18,62 @@ export default ({navigation}) => {
                 4-Qual a etnia/raça da paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: 'Other'
+                })}>
                     <Text style={styles.buttonText}>
                         Desconhecido
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: 'White'
+                })}>
                     <Text style={styles.buttonText}>
                         Branca
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
+                        value1: navigation.getParam('value1', ''),
+                        value2: navigation.getParam('value2', ''),
+                        value3: navigation.getParam('value3', ''),
+                        value4: 'Black'
+                    })}>
                     <Text style={styles.buttonText}>
                         Afro-americana
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q4sub1')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q4sub1', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: 'Hispanic'
+                })}>
                     <Text style={styles.buttonText}>
                         Hispânica/Latina
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: 'Other'
+                })}>
                     <Text style={styles.buttonText}>
                         Nativo-americano ou nativo do Alasca
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q4sub2')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q4sub2', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: 'Asian'
+                })}>
                     <Text style={styles.buttonText}>
                         Asiática
                     </Text>

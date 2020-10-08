@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import axios from 'axios';
 import HeaderBack from '../../components/HeaderBack';
 import FooterHome from '../../components/FooterHome';
 
@@ -18,22 +19,80 @@ export default ({navigation}) => {
                 8- Quantas parentes de primeiro grau da paciente (mãe, irmãs, filhas) tiveram câncer de mama?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Results')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => axios.post('https://bcrisktool.cancer.gov/calculator.html', {
+                    'cancerAndRadiationHistory': '1',
+                    'geneticMakeup': '1',
+                    'age': '60',
+                    'race': 'White',
+                    //'sub_race':'',
+                    'biopsy': '0',
+                    //'biopsy_result': '',
+                   // 'biopsy_ah': '',
+                    'age_period': '1',
+                    'childbirth_age': '3',
+                    'relatives': '0'
+                }).then(function (response) {
+                    console.log(response.config);
+                }).catch(function (error) {
+                    console.log(error);
+                  })}>
                     <Text style={styles.buttonText}>
                         Desconhecido
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => axios.post('https://bcrisktool.cancer.gov/calculator.html', {
+                    'cancerAndRadiationHistory': navigation.getParam('value1', ''),
+                    'geneticMakeup': navigation.getParam('value2', ''),
+                    'age': navigation.getParam('value3', ''),
+                    'race': navigation.getParam('value4', ''),
+                    //'sub_race':navigation.getParam('value5', ''),
+                    'biopsy': navigation.getParam('value6', ''),
+                    //'biopsy_result': navigation.getParam('value7', ''),
+                    //'biopsy_ah': navigation.getParam('value8', ''),
+                    'age_period': navigation.getParam('value9', ''),
+                    'childbirth_age': navigation.getParam('value10', ''),
+                    'relatives': '0'
+                }).then(function (response) {
+                    console.log(response);
+                  })}>
                     <Text style={styles.buttonText}>
                         Nenhum
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => axios.post('https://bcrisktool.cancer.gov/calculator.html', {
+                    'cancerAndRadiationHistory': navigation.getParam('value1', ''),
+                    'geneticMakeup': navigation.getParam('value2', ''),
+                    'age': navigation.getParam('value3', ''),
+                    'race': navigation.getParam('value4', ''),
+                    //'sub_race':navigation.getParam('value5', ''),
+                    'biopsy': navigation.getParam('value6', ''),
+                    //'biopsy_result': navigation.getParam('value7', ''),
+                   // 'biopsy_ah': navigation.getParam('value8', ''),
+                    'age_period': navigation.getParam('value9', ''),
+                    'childbirth_age': navigation.getParam('value10', ''),
+                    'relatives': '1'
+                }).then(function (response) {
+                    console.log(response);
+                  })}>
                     <Text style={styles.buttonText}>
                         Um paciente
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => axios.post('https://bcrisktool.cancer.gov/calculator.html', {
+                    'cancerAndRadiationHistory': navigation.getParam('value1', ''),
+                    'geneticMakeup': navigation.getParam('value2', ''),
+                    'age': navigation.getParam('value3', ''),
+                    'race': navigation.getParam('value4', ''),
+                    //'sub_race':navigation.getParam('value5', ''),
+                    'biopsy': navigation.getParam('value6', ''),
+                   // 'biopsy_result': navigation.getParam('value7', ''),
+                    //'biopsy_ah': navigation.getParam('value8', ''),
+                    'age_period': navigation.getParam('value9', ''),
+                    'childbirth_age': navigation.getParam('value10', ''),
+                    'relatives': '2'
+                }).then(function (response) {
+                    console.log(response.data);
+                  })}>
                     <Text style={styles.buttonText}>
                         Mais do que um paciente
                     </Text>

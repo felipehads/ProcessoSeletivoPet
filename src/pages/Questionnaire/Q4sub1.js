@@ -18,12 +18,24 @@ export default ({navigation}) => {
                 4.1-Qual a sub-etnia/sub-raça da paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: 'US Hispanic'
+                })}>
                     <Text style={styles.buttonText}>
                         Nascida no EUA
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: 'Foreign Hispanic'
+                })}>
                     <Text style={styles.buttonText}>
                         Nascida fora do EUA
                     </Text>

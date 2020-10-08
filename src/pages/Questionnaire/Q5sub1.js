@@ -22,12 +22,28 @@ export default ({navigation}) => {
                 paciente?
             </Text>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5sub2')}>
+                <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5sub2', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: navigation.getParam('value5', ''),
+                    value6: navigation.getParam('value6', ''),
+                    value7: '1'
+                })}>
                     <Text style={styles.buttonText}>
                         Apenas uma
                     </Text>
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5sub2')}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5sub2', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value2', ''),
+                    value3: navigation.getParam('value3', ''),
+                    value4: navigation.getParam('value4', ''),
+                    value5: navigation.getParam('value5', ''),
+                    value6: navigation.getParam('value6', ''),
+                    value7: '2'
+                })}>
                     <Text style={styles.buttonText}>
                         Duas ou mais
                     </Text>

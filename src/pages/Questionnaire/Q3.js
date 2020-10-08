@@ -31,8 +31,8 @@ export default ({navigation}) => {
         
         <RNPickerSelect
             onValueChange={(value) => navigation.navigate('Q4', {
-                value1: navigation.getParam('value1', 'default'),
-                value2: navigation.getParam('value2', 'default'),
+                value1: navigation.getParam('value1', ''),
+                value2: navigation.getParam('value2', ''),
                 value3: value
             })}
             items={[

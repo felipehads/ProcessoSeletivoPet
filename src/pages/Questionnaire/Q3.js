@@ -92,14 +92,6 @@ export default ({navigation}) => {
             ]}
         />
         <View>
-            <TouchableOpacity onPress={() => navigation.navigate('Q3')}>
-                <Text>
-                    EMPAQUEI AQUI
-                </Text>
-            </TouchableOpacity>
-        </View>
-
-        <View>
             <FooterHome navigation = {() => navigation.navigate("Homepage")}/>
         </View>
     </View>

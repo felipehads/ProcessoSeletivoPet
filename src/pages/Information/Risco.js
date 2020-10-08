@@ -50,7 +50,28 @@ export default ({navigation}) => {
                     mama antes dos 50 anos;{"\n"}
                      História familiar de câncer de
                     mama em homens;{"\n"}
-                     Alteração genética nos genes{"\n"}
+                     Alteração genética nos genes
+                    BRCA1 e BRCA2.{"\n"}
+                </Text>
+
+                <Text style={styles.bigText}>
+                    Proteção
+                </Text>
+                <Text style={styles.text}>
+                     Amamentação{"\n"}
+                     Prática regular de atividade 
+                    física.{"\n"}
+                </Text>
+                <Text style={styles.bigText}>
+                    OBS.:
+                </Text>
+                <Text style={styles.text}>
+                    {"\n\t"}A mulher que possui um ou mais dos fatores genéticos/hereditários 
+                    é considerada com risco elevado para desenvolver câncer de mama.
+                    {"\n\t"}O câncer de mama de caráter genético/hereditário corresponde a apenas 
+                    5% a 10% do total de casos da doença.
+                    {"\n\t"}Atenção: A presença de um ou mais desses fatores de risco não significa 
+                    que a mulher necessariamente terá a doença.
                 </Text>
             </View>
         </ScrollView>

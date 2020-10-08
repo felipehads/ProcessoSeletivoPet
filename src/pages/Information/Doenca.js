@@ -13,7 +13,7 @@ export default ({navigation}) => {
                 <Text style={styles.bigText}>
                     O que é câncer de mama?
                 </Text>
-                <Image style={styles.img} source={require('../../../assets/favicon.png')}/>
+                <Image style={styles.img} source={require('../../../assets/D1.png')}/>
                 <Text style={styles.text}>
                     O câncer de mama é uma
                     doença causada pela multiplicação
@@ -32,14 +32,14 @@ export default ({navigation}) => {
 
                 <View style={styles.bottomImageContainer}>
                     <View style={styles.bottomBox}>
-                        <Image style={styles.bottomImage}source={require('../../../assets/favicon.png')}/>
+                        <Image style={styles.bottomImage}source={require('../../../assets/D2.png')}/>
                         <Text style={styles.bottomText}>
                             Alteração no tamanho{"\n"}
                             ou na forma da mama
                         </Text>
                     </View>
                     <View style={styles.bottomBox}>
-                        <Image style={styles.bottomImage}source={require('../../../assets/favicon.png')}/>
+                        <Image style={styles.bottomImage}source={require('../../../assets/D3.png')}/>
                         <Text style={styles.bottomText}>
                             Vermelhidão ou{"\n"}
                             coceira na mama e/ou{"\n"}
@@ -50,19 +50,54 @@ export default ({navigation}) => {
 
                 <View style={styles.bottomImageContainer}>
                     <View style={styles.bottomBox}>
-                        <Image style={styles.bottomImage}source={require('../../../assets/favicon.png')}/>
+                        <Image style={styles.bottomImage}source={require('../../../assets/D4.png')}/>
                         <Text style={styles.bottomText}>
-                            Liberação de líquido pelo 
+                            Liberação de líquido pelo {"\n"}
+                            mamilo, sem apertar
+ 
                         </Text>
                     </View>
                     <View style={styles.bottomBox}>
-                        <Image style={styles.bottomImage}source={require('../../../assets/favicon.png')}/>
+                        <Image style={styles.bottomImage}source={require('../../../assets/D5.png')}/>
                         <Text style={styles.bottomText}>
-                            Nódulo ou caroço na 
+                            Nódulo ou caroço na{"\n"} 
+                            mama, que está sempre{"\n"} 
+                            presente e não diminui{"\n"} 
+                            de tamanho
                         </Text>
                     </View>
                 </View>
 
+                <View style={styles.bottomImageContainer}>
+                    <View style={styles.bottomBox}>
+                        <Image style={styles.bottomImage}source={require('../../../assets/D6.png')}/>
+                        <Text style={styles.bottomText}>
+                            Inchaço na axila ou{"\n"} 
+                            ao redor da clavícula
+                        </Text>
+                    </View>
+                    <View style={styles.bottomBox}>
+                        <Image style={styles.bottomImage}source={require('../../../assets/D7.png')}/>
+                        <Text style={styles.bottomText}>
+                            Afundamento da{"\n"} 
+                            mama, endurecimento{"\n"} 
+                            ou enrugamento da{"\n"} 
+                            pele (casca de laranja)
+                        </Text>
+                    </View>
+                </View>
+
+                <Text style={styles.bigText}>
+                    Quais os tipos mais comuns?
+                </Text>
+                <Text style={styles.text}>
+                    O tipo histológico mais comum para o câncer de 
+                    mama feminina é o carcinoma de células epiteliais, 
+                    que se divide em lesões in situ e invasoras. 
+                    Os carcinomas mais frequentes são os ductais ou lobulares.
+                </Text>
+                <Image style={styles.img} source={require('../../../assets/D8.png')}/>
+                <Image style={styles.img} source={require('../../../assets/D9.png')}/>
             </View>
                 
         </ScrollView>

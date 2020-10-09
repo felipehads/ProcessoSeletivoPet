@@ -1,10 +1,39 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import axios from 'axios';
 import HeaderBack from '../../components/HeaderBack';
 import FooterHome from '../../components/FooterHome';
 
+function teste(x){
+    
+    const promise = axios.post('https://bcrisktool.cancer.gov/calculate', 
+        x,
+        {
+        headers: {
+            'Content-Type':'multipart/form-data',
+            }
+        }
+    )
+    const dataPromise = promise.then((response) => response.data)
+    return dataPromise
+}
+
 export default ({navigation}) => {
+    var bodyFormData = new FormData();
+    bodyFormData.append('cancerAndRadiationHistory', navigation.getParam('value1', ''))
+    bodyFormData.append('geneticMakeup', navigation.getParam('value2', ''))
+    bodyFormData.append('age', navigation.getParam('value3', ''))
+    bodyFormData.append('race', navigation.getParam('value4', ''))
+    bodyFormData.append('sub_race', navigation.getParam('value5', ''))
+    bodyFormData.append('biopsy', navigation.getParam('value6', ''))
+    bodyFormData.append('biopsy_result', navigation.getParam('value7', ''))
+    bodyFormData.append('biopsy_ah', navigation.getParam('value8', ''))
+    bodyFormData.append('age_period', navigation.getParam('value9', ''))
+    bodyFormData.append('childbirth_age', navigation.getParam('value10', ''))
+    bodyFormData.append('relatives', navigation.getParam('value11', ''))
+
+
     return(
     <View style={styles.container}>
         <View>
@@ -18,7 +47,8 @@ export default ({navigation}) => {
                 Risco de desenvolver câncer de mama nos próximos 5 anos
             </Text>
             <Text style={styles.text}>
-                Risco do paciente: X%{"\n"}Risco médio da população:X%
+                Risco do paciente: %
+                {"\n"}Risco médio da população:X%
             </Text>
         </View>
         <View style={styles.textContainer}>

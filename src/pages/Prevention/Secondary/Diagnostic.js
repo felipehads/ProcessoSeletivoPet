@@ -10,12 +10,15 @@ export default ({navigation}) => {
             <View>
                 <HeaderBack textoPrincipal="PREVENÇÃO" navigation = {() => navigation.navigate("Secondary")}/>
             </View>
-            <Text style={styles.pinkText}>Diagnóstico precoce</Text>
-            <Text style={styles.text}>Refere-se as ações de
+            <Text style={styles.pinkText}>
+                Diagnóstico precoce
+            </Text>
+            <Text style={styles.text}>
+                {"\n\t"}Refere-se as ações de
                 diagnóstico para a identificação de
                 casos de câncer na fase inicial e
                 lesões de indivíduos sintomáticos.
-                O tripé do diagnóstico
+                {"\n\t"}O tripé do diagnóstico
                 precoce é: deixar a população
                 alerta para os sinais e sintomas
                 suspeitos de câncer; profissionais de
@@ -27,7 +30,7 @@ export default ({navigation}) => {
                 garantia da integralidade da
                 assistência em toda a linha de
                 cuidado.
-                Além disso, diminuir as
+                {"\n\t"}Além disso, diminuir as
                 barreiras de acesso e qualificar a
                 demanda e a oferta de serviços, de
                 forma a possibilitar a confirmação
@@ -37,13 +40,26 @@ export default ({navigation}) => {
                 continuidade do cuidado na rede
                 de serviços.
             </Text>
-            <Text style={styles.bigText}>Estratégias de
-            conscientização
+            <Text style={styles.bigText}>
+                Estratégias de conscientização
             </Text>
-            <Text style={styles.text}>Podem ser realizadas
-            através de ações de educação
-            para mudar conhecimentos e
-            atitudes sobre o câncer de mam
+            <Text style={styles.text}>
+                {"\n\t"}Podem ser realizadas
+                através de ações de educação
+                para mudar conhecimentos e
+                atitudes sobre o câncer de mama e 
+                desconstruir mitos sobre a doença.
+                {"\n\t"}Essas estratégias podem 
+                ocorrer por meio de medidas de 
+                comunicação de massa (campanhas) 
+                e melhoria do conhecimento e das 
+                atitudes sobre câncer em geral, com 
+                intervenções educativas individuais, 
+                capacitação dos médicos generalistas e 
+                demais profissionais de saúde da atenção 
+                primária que participem do atendimento 
+                ou das atividades educativas para essa 
+                população.
             </Text>
             
             

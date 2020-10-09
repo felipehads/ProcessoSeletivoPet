@@ -29,8 +29,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "column",
         justifyContent: "center",
-        marginHorizontal:10,
-        marginBottom:25
+        backgroundColor: "#ffffff"
     },
     buttonsContainer: {
         flex: 1,

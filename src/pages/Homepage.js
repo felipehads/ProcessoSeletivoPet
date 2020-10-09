@@ -6,7 +6,7 @@ import HeaderStart from '../components/HeaderStart';
 const Homepage = ({navigation}) => {
     return(
         <View style={styles.container}>
-            <View style={styles.header}>
+            <View style={styles.headerContainer}>
                 <View>
                     <HeaderStart textoPrincipal="Olá, profissional da saúde! Selecione um dos menus
                     para começarmos" navigation = {() => navigation.navigate("")}/>
@@ -34,18 +34,15 @@ const Homepage = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        height: "100%",
+        width: "100%",
         flexDirection: "column",
-        justifyContent: "space-between",
-        backgroundColor: "#ffffff",
+        alignItems: "center",
+        backgroundColor: "#ffffff"
     },
-    header: {
+    headerContainer:{
         width: "100%",
         flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        marginTop: 10,
-        marginBottom: 25,
     },
     text: {
         textAlign: "right",

@@ -227,7 +227,7 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:10,
+        backgroundColor: "#ffffff"
     },
     pinkText:{
         fontSize: 25,
@@ -246,7 +246,8 @@ const styles = StyleSheet.create({
     text:{
         fontSize:18,
         textAlign: "justify",
-        fontWeight: "600"
+        fontWeight: "600",
+        marginHorizontal:10
     },
     imgContainer:{
         flex:1,

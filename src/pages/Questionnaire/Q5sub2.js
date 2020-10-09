@@ -78,8 +78,7 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:20,
-        marginBottom: 25
+        backgroundColor: "#ffffff"
     },
     bigText:{
         fontSize:28,
@@ -91,7 +90,8 @@ const styles = StyleSheet.create({
     text:{
         fontSize:22,
         textAlign: "justify",
-        fontWeight: "600"
+        fontWeight: "600",
+        marginHorizontal: 10
     },
     buttonsContainer:{
         flexDirection:"row",

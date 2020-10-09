@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
         marginHorizontal:5
     },
     headerText: {
+        flex: 0.8,
         fontSize: 30,
         textAlign: "right",
         fontWeight: "bold",

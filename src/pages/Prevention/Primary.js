@@ -34,7 +34,7 @@ export default ({navigation}) => {
                     comportamentos protetores
                 </Text>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require("../../../assets/Prev1.png")}/>
+                    <Image style={styles.img2} source={require("../../../assets/Prev1.png")}/>
                 </View>
                 <Text style={styles.text}>
                     •   Controlar o peso (IMC menor
@@ -56,7 +56,7 @@ export default ({navigation}) => {
                     de desenvolver o câncer de mama
                 </Text>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require("../../../assets/Prev2.png")}/>
+                    <Image style={styles.img1} source={require("../../../assets/Prev2.png")}/>
                 </View>
                 <Text style={styles.text}>
                     {"\n\t"}A redução absoluta do risco de 
@@ -74,7 +74,7 @@ export default ({navigation}) => {
                     câncer de mama
                 </Text>
                 <View style={styles.imgContainer}>
-                    <Image style={styles.img} source={require("../../../assets/Prev3.png")}/>
+                    <Image style={styles.img2} source={require("../../../assets/Prev3.png")}/>
                 </View>
                 <Text style={styles.text}>
                     {"\n\t"}De acordo com o INCA, o SUS não utiliza 
@@ -98,7 +98,7 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:10,
+        backgroundColor: "#ffffff"
     },
     pinkText:{
         fontSize: 25,
@@ -123,8 +123,12 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems: "center"
     }, 
-    img:{
+    img1:{
         height:200,
         width:200
+    },
+    img2:{
+        height:160,
+        width:300
     }
 })

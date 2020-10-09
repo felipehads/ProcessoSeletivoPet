@@ -89,7 +89,7 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:10,
+        backgroundColor: "#ffffff"
     },
     headerContainer:{
         width: "100%"
@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
     },
     text:{
         fontSize:18,
+        marginHorizontal:10,
         textAlign: "justify",
         fontWeight: "600"
     }

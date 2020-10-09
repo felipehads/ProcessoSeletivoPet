@@ -33,6 +33,20 @@ export default ({navigation}) => {
     bodyFormData.append('childbirth_age', navigation.getParam('value10', ''))
     bodyFormData.append('relatives', navigation.getParam('value11', ''))
 
+    const promise = axios.post('https://bcrisktool.cancer.gov/calculate',
+        bodyFormData,
+        {
+            headers:{
+                'Content-Type':'multipart/form-data'
+            }
+        }    
+    ).then(function (response){
+        return response.data.message
+    })
+
+    res = promise.then(response)
+
+    console.log(res)
 
     return(
     <View style={styles.container}>
@@ -69,8 +83,7 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:20,
-        marginBottom: 25
+        backgroundColor: "#ffffff"
     },
     bigText:{
         fontSize:28,
@@ -82,7 +95,8 @@ const styles = StyleSheet.create({
     text:{
         fontSize:24,
         textAlign: "justify",
-        fontWeight: "600"
+        fontWeight: "600",
+        marginHorizontal: 10
     },
     Boldtext:{
         fontSize:24,

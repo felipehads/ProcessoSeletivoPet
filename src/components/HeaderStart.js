@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
         marginBottom: 25,
     },
     headerText: {
-        fontSize: 24,
+        fontSize: 20,
         fontWeight: "bold",
         color: "pink"
     }

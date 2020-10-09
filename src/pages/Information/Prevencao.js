@@ -34,8 +34,7 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        marginHorizontal:10,
-        marginBottom:25
+        backgroundColor: "#ffffff"
     },
     buttonsContainer:{
         flex:1,

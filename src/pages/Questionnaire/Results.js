@@ -1,23 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import axios from 'axios';
 import HeaderBack from '../../components/HeaderBack';
 import FooterHome from '../../components/FooterHome';
-
-function teste(x){
-    
-    const promise = axios.post('https://bcrisktool.cancer.gov/calculate', 
-        x,
-        {
-        headers: {
-            'Content-Type':'multipart/form-data',
-            }
-        }
-    )
-    const dataPromise = promise.then((response) => response.data)
-    return dataPromise
-}
 
 export default ({navigation}) => {
     var bodyFormData = new FormData();
@@ -33,16 +19,23 @@ export default ({navigation}) => {
     bodyFormData.append('childbirth_age', navigation.getParam('value10', ''))
     bodyFormData.append('relatives', navigation.getParam('value11', ''))
 
-    axios.post('https://bcrisktool.cancer.gov/calculate',
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        axios.post('https://bcrisktool.cancer.gov/calculate',
         bodyFormData,
         {
             headers:{
                 'Content-Type':'multipart/form-data'
             }
         }    
-    ).then(function (response){
-        console.log(JSON.parse(response.data.message).risk) 
-    })
+    )
+        .then(function(response){
+            setData(JSON.parse(response.data.message))
+        })
+        
+        .catch((error) => console.error(error))
+    }, []);
 
     return(
     <View style={styles.container}>
@@ -57,8 +50,8 @@ export default ({navigation}) => {
                 Risco de desenvolver câncer de mama nos próximos 5 anos
             </Text>
             <Text style={styles.text}>
-                Risco do paciente: %
-                {"\n"}Risco médio da população:X%
+                Risco do paciente: {data.risk}%
+                {"\n"}Risco médio da população:{data.averageFiveRisk}%
             </Text>
         </View>
         <View style={styles.textContainer}>
@@ -66,7 +59,8 @@ export default ({navigation}) => {
                 Risco de desenvolver câncer de mama ao longo da vida
             </Text>
             <Text style={styles.text}>
-                Risco do paciente: X%{"\n"}Risco médio da população:X%
+                Risco do paciente: {data.lifetime_patient_risk}%
+                {"\n"}Risco médio da população:{data.lifetime_average_risk}%
             </Text>
         </View>
         <View>

@@ -8,7 +8,7 @@ const Homepage = ({navigation}) => {
         <View style={styles.container}>
             <View style={styles.headerContainer}>
                 <View>
-                    <HeaderStart textoPrincipal="Olá, profissional da saúde! Selecione um dos menus
+                    <HeaderStart textoPrincipal="Selecione um dos menus
                     para começarmos" navigation = {() => navigation.navigate("")}/>
                 </View>
             </View> 
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         width: "100%",
-        flexDirection: "row",
+        marginTop: 40
     },
     text: {
         textAlign: "right",

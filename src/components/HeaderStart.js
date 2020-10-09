@@ -12,9 +12,10 @@ const HeaderBack = ({textoPrincipal, navigation}) => {
 
 const styles = StyleSheet.create({
     header: {
+        flex: 0.6,
         flexDirection: "row",
         alignItems: "center",
-        width: "100%",
+        justifyContent: "space-between",
         marginTop: 40,
         marginBottom: 25,
     },

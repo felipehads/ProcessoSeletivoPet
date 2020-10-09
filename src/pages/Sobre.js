@@ -92,8 +92,7 @@ const styles = StyleSheet.create({
         marginHorizontal:10,
     },
     headerContainer:{
-        width: "100%",
-        backgroundColor: "#ffffff",
+        width: "100%"
     },
     bigText:{
         fontSize:25,

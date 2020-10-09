@@ -61,8 +61,17 @@ export default ({navigation}) => {
                 ou das atividades educativas para essa 
                 população.
             </Text>
-            
-            
+            <View style={styles.imgContainer}>
+                <Image style={styles.img} source={require('../../../../assets/Prev11.png')}/>
+            </View>
+            <Text style={styles.text}>
+                {"\n\t"}O INCA recomenda a 
+                implementação de estratégias 
+                de conscientização para o 
+                diagnóstico precoce do câncer 
+                de mama. 
+            </Text>
+                      
         </ScrollView>
     )
 }
@@ -90,5 +99,14 @@ const styles = StyleSheet.create({
         fontSize:18,
         textAlign: "justify",
         fontWeight: "600"
+    },
+    imgContainer:{
+        flex:1,
+        alignItems: "center",
+        marginVertical: 15
+    },
+    img:{
+        width: 200,
+        height: 200
     }
 })

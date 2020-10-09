@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet,TouchableOpacity} from 'react-native';
+import {View, Image,StyleSheet,TouchableOpacity} from 'react-native';
 import HeaderStart from '../components/HeaderStart';
 
 const FirstPage = ({navigation}) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { color } from 'react-native-reanimated';
 import HeaderBack from '../components/HeaderBack';

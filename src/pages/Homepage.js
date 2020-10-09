@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet,TouchableOpacity} from 'react-native';
+import {View, Image,StyleSheet} from 'react-native';
 import NewButton from '../components/NewButton';
 import HeaderStart from '../components/HeaderStart';
 
@@ -13,9 +13,16 @@ const Homepage = ({navigation}) => {
                 </View>
             </View> 
             <View style={styles.buttonsContainer}>
-                 <NewButton textoPrincipal="Calculadora de risco(Gail)" navigation = {() => navigation.navigate("Q1")}/>
-                <NewButton textoPrincipal="Acesso a informação" navigation = {() => navigation.navigate("Information")}/> 
-                <NewButton textoPrincipal="Sobre o aplicativo" navigation = {() => navigation.navigate("Sobre")}/> 
+                <View>
+                    <NewButton textoPrincipal="Calculadora de risco(Gail)" navigation = {() => navigation.navigate("Q1")}/>
+                </View>
+                <View>
+                    <NewButton textoPrincipal="Acesso a informação" navigation = {() => navigation.navigate("Information")}/> 
+                </View>
+                <View>
+                    <Image></Image>
+                    <NewButton textoPrincipal="Sobre o aplicativo" navigation = {() => navigation.navigate("Sobre")}/>
+                </View> 
              </View>
         
         </View>

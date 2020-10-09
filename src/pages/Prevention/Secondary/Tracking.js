@@ -40,7 +40,7 @@ export default ({navigation}) => {
                 sintomas.
             </Text>
             <View style={styles.imgContainer}>
-                <Image style={styles.img} source={require('../../../../assets/favicon.png')}/>
+                <Image style={styles.img} source={require('../../../../assets/Prev4.png')}/>
             </View>
         </ScrollView>
     )

@@ -152,9 +152,9 @@ const styles = StyleSheet.create({
         borderColor: "pink",
         borderRadius: 10,
         width: 300,
-        padding: 8,
+        padding: 6,
         justifyContent: "center",
-        marginVertical: 2
+        marginVertical: 1
     },
     buttonText:{
         textAlign: "left",

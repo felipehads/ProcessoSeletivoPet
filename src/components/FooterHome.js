@@ -5,9 +5,6 @@ const FooterHome = ({navigation}) => {
     return(
         <TouchableOpacity style={styles.buttonTop}  onPress = {navigation}>
                 <Image source={require('../../assets/home.png')}/>
-                <Text style={styles.text}>
-                    Início
-                </Text>
         </TouchableOpacity>
     )
 }
@@ -16,13 +13,10 @@ const styles = StyleSheet.create({
     buttonTop:{
         borderWidth: 1,
         borderColor: "black",
-        width: "100%",
+        justifyContent: "center",
         padding:5,
+        width: '100%' ,
         alignItems: "center"
-    },
-    text:{
-        fontWeight: "bold",
-        fontSize: 30
     }
 });
 

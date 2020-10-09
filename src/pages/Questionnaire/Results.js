@@ -33,7 +33,7 @@ export default ({navigation}) => {
     bodyFormData.append('childbirth_age', navigation.getParam('value10', ''))
     bodyFormData.append('relatives', navigation.getParam('value11', ''))
 
-    const promise = axios.post('https://bcrisktool.cancer.gov/calculate',
+    axios.post('https://bcrisktool.cancer.gov/calculate',
         bodyFormData,
         {
             headers:{
@@ -41,12 +41,8 @@ export default ({navigation}) => {
             }
         }    
     ).then(function (response){
-        return response.data.message
+        console.log(JSON.parse(response.data.message).risk) 
     })
-
-    res = promise.then(response)
-
-    console.log(res)
 
     return(
     <View style={styles.container}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet,TouchableOpacity} from 'react-native';
+import {View, Image,StyleSheet,TouchableOpacity} from 'react-native';
 import HeaderStart from '../components/HeaderStart';
 
 const FirstPage = ({navigation}) => {
@@ -11,34 +11,34 @@ const FirstPage = ({navigation}) => {
             </View>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/>
+                    <Image style={styles.buttonsImg} source={require('../../assets/medic.png')}/>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/> 
-                </TouchableOpacity>
-            </View>
-            <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/>   
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/>  
+                    <Image style={styles.buttonsImg} source={require('../../assets/nurse.png')}/> 
                 </TouchableOpacity>
             </View>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/>     
+                    <Image style={styles.buttonsImg} source={require('../../assets/nutritionist.png')}/>   
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/>  
+                    <Image style={styles.buttonsImg} source={require('../../assets/dentist.png')}/>  
                 </TouchableOpacity>
             </View>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/> 
+                    <Image style={styles.buttonsImg} source={require('../../assets/social-worker.png')}/>     
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
-                    <Image source={require('../../assets/favicon.png')}/>               
+                    <Image style={styles.buttonsImg} source={require('../../assets/psychologist.png')}/>  
+                </TouchableOpacity>
+            </View>
+            <View style={styles.buttonsContainer}>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
+                    <Image style={styles.buttonsImg} source={require('../../assets/pharmaceutical.png')}/> 
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
+                    <Image style={styles.buttonsImg} source={require('../../assets/physical-educator.png')}/>               
                 </TouchableOpacity>
             </View>
 
@@ -60,14 +60,13 @@ const styles = StyleSheet.create({
     },
     buttonsContainer:{
         flexDirection: "row",
-        marginVertical: 15
     },
-    buttonsEach: {
-        marginHorizontal: 50,
-        borderWidth: 3,
-        borderColor: "black",
-        padding: 15,
-        borderRadius: 50
+    buttonsImg:{
+        width: 125,
+        height: 125
+    },
+    buttonsEach:{
+        marginHorizontal: 15
     }
 })
 

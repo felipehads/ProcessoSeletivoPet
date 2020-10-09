@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { color } from 'react-native-reanimated';
 import HeaderBack from '../components/HeaderBack';
@@ -92,8 +92,7 @@ const styles = StyleSheet.create({
         marginHorizontal:10,
     },
     headerContainer:{
-        width: "100%",
-        backgroundColor: "#ffffff",
+        width: "100%"
     },
     bigText:{
         fontSize:25,

@@ -1,13 +1,14 @@
 import React from 'react';
-import {View, Image,StyleSheet,TouchableOpacity} from 'react-native';
-import HeaderStart from '../components/HeaderStart';
+import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 const FirstPage = ({navigation}) => {
     return(
         <View style={styles.container}>
-            <View style = {styles.headerContainer}>
-                <HeaderStart textoPrincipal="Bem vindo, selecione sua
-                área de atuação:" navigation = {() => navigation.navigate("")}/>
+            <View style={styles.topContainer}>
+                <Text style={styles.header}>Bem-vindo(a) ao MAMAPrev.</Text>
+            </View>
+            <View>
+                <Text style={styles.text}>Este é um aplicativo voltado aos profissionais da saúde. Por favor, selecione sua área de atuação.</Text>
             </View>
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Homepage')}>
@@ -54,9 +55,18 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "#ffffff"
     },
-    headerContainer:{
-        width: "100%",
-        flexDirection: "row",
+    topContainer: {
+        marginTop: 75
+    },
+    header: {
+        textAlign: "center",
+        fontSize: 30,
+    },
+    text:{
+        textAlign:"center",
+        fontSize:16,
+        color: "#808080",
+        marginHorizontal: 50
     },
     buttonsContainer:{
         flexDirection: "row",

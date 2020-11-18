@@ -12,16 +12,16 @@ const NewButton = ({ textoPrincipal, navigation}) => {
 
 const styles = StyleSheet.create({
     buttonsEach: {
-        borderWidth: 2,
-        borderColor: "pink",
-        width: "70%",
-        alignItems: "center",
-        padding: 10,
+        width: "80%",
+        backgroundColor: "#ff69b4",
+        borderRadius: 5,
+        padding: 20,
         marginBottom: 10
     },
     textButton: {
-        fontSize: 30,
-        textAlign: "center"
+        fontSize: 14,
+        textAlign: "center",
+        color: "#ffffff"
     }
 });
 

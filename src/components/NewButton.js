@@ -13,7 +13,7 @@ const NewButton = ({ textoPrincipal, navigation}) => {
 const styles = StyleSheet.create({
     buttonsEach: {
         width: "80%",
-        backgroundColor: "#ff69b4",
+        backgroundColor: "#ecb0cb",
         borderRadius: 5,
         padding: 20,
         marginBottom: 10

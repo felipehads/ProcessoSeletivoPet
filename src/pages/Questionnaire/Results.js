@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import axios from 'axios';
-import HeaderBack from '../../components/HeaderBack';
-import FooterHome from '../../components/FooterHome';
 
 export default ({navigation}) => {
     var bodyFormData = new FormData();
@@ -39,13 +37,13 @@ export default ({navigation}) => {
 
     return(
     <View style={styles.container}>
-        <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q8")}/>
-        </View>
+        <Text style={styles.header}>
+            Calculadora de Risco(Gail)
+        </Text>
+        <Text style={styles.bigText}>
+            RESULTADO
+        </Text>
         <View style={styles.textContainer}>
-            <Text style={styles.bigText}>
-                RESULTADO
-            </Text>
             <Text style={styles.Boldtext}>
                 Risco de desenvolver câncer de mama nos próximos 5 anos
             </Text>
@@ -63,8 +61,12 @@ export default ({navigation}) => {
                 {"\n"}Risco médio da população:{data.lifetime_average_risk}%
             </Text>
         </View>
-        <View>
-            <FooterHome navigation = {() => navigation.navigate("Homepage")}/>
+        <View style={styles.buttonsContainer}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
+                <Text style={styles.textButton}>
+                    Voltar ao Menu
+                </Text>
+            </TouchableOpacity>
         </View>
     </View>
     )
@@ -73,14 +75,19 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
+        justifyContent:"center",
         backgroundColor: "#ffffff"
+    },
+    header: {
+        fontSize:34,
+        fontWeight: "bold",
+        textAlign: "center"
     },
     bigText:{
         fontSize:28,
         fontWeight: "bold",
         marginBottom: 10,
         textAlign: "center",
-        marginVertical: 10,
     },
     text:{
         fontSize:24,
@@ -90,12 +97,30 @@ const styles = StyleSheet.create({
     },
     Boldtext:{
         fontSize:24,
+        marginHorizontal:10,
         textAlign: "justify",
         fontWeight: "600",
         fontWeight: "bold"
     },
     textContainer:{
-        marginVertical: 10
+        marginVertical: 10,
+        marginHorizontal:10
+    },
+    buttonsContainer:{
+        flexDirection:"column",
+        justifyContent:"flex-end",
+        alignItems:"center"
+    },
+    button: {
+        backgroundColor: "#ecb0cb",
+        width: 300,
+        marginTop: 40,
+        borderRadius: 5,
+        padding: 20,
+    },
+    textButton: {
+        fontSize: 14,
+        textAlign: "center",
+        color: "#ffffff"
     }
-
 })

@@ -6,9 +6,15 @@ import { color } from 'react-native-reanimated';
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
+<<<<<<< HEAD
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
                     SOBRE O APLICATIVO
+=======
+            <View>
+                <Text style ={styles.header}>
+                    SOBRE O{"\n"} APLICATIVO
+>>>>>>> d6035882c2eb35dbb00fac713a67c7bf5ad5263c
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -26,6 +32,7 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: "#ffffff"
     },
+<<<<<<< HEAD
     headerContainer:{
         top: 66,
         width:280,
@@ -49,5 +56,25 @@ const styles = StyleSheet.create({
         opacity: 0.7,
         width: 298,
         lineHeight: 41
+=======
+    header:{
+        fontSize:34,
+        marginTop: 50,
+        marginRight: 20,
+        fontWeight: "bold",
+        textAlign: "right"
+    },
+    bigText:{
+        fontSize:25,
+        fontWeight: "bold",
+        marginVertical: 10,
+        marginLeft: 20,
+    },
+    text:{
+        fontSize:18,
+        marginHorizontal:30,
+        textAlign: "justify",
+        fontWeight: "600",
+>>>>>>> d6035882c2eb35dbb00fac713a67c7bf5ad5263c
     }
 })

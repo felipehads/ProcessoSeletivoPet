@@ -7,71 +7,14 @@ import HeaderBack from '../../components/HeaderBack';
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
-            <View>
-                <HeaderBack textoPrincipal="FATORES DE RISCO" navigation = {() => navigation.navigate("Information")}/>
+            <View style={styles.headerContainer}>
+                <Text style={styles.headerText}>
+                    Fatores de risco
+                </Text>
             </View>
-            <View style={styles.informationText}>
-                <Text style={styles.bigText}>
-                    Ambientais e
-                    Comportamentais
-                </Text>
+            <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                     Excesso de peso;{"\n"}
-                     Inatividade física;{"\n"}
-                     Má alimentação;{"\n"}
-                     Ingestão de álcool;{"\n"}
-                     Uso de tabaco;{"\n"}
-                     Exposição frequente a Raio X na
-                    região do tórax.{"\n"}
-                </Text>
-
-                <Text style={styles.bigText}>
-                    História Reprodutiva e
-                    Hormonal    
-                </Text>
-                <Text style={styles.text}>
-                     Menarca antes dos 12 anos;{"\n"}
-                     Menopausa após os 55 anos;{"\n"}
-                     Nuliparidade;{"\n"}
-                     Primeira gravidez após os 30
-                    anos;{"\n"}
-                     Uso de contraceptivos
-                    hormonais (estrogênioprogesterona);{"\n"}
-                     Reposição hormonal na pósmenopausa.{"\n"}
-                </Text>
-
-                <Text style={styles.bigText}>
-                    Genéticos e Hereditários
-                </Text>
-                <Text style={styles.text}>
-                     História familiar de câncer no
-                    ovário;{"\n"}
-                     História familiar de câncer de
-                    mama antes dos 50 anos;{"\n"}
-                     História familiar de câncer de
-                    mama em homens;{"\n"}
-                     Alteração genética nos genes
-                    BRCA1 e BRCA2.{"\n"}
-                </Text>
-
-                <Text style={styles.bigText}>
-                    Proteção
-                </Text>
-                <Text style={styles.text}>
-                     Amamentação{"\n"}
-                     Prática regular de atividade 
-                    física.{"\n"}
-                </Text>
-                <Text style={styles.bigText}>
-                    OBS.:
-                </Text>
-                <Text style={styles.text}>
-                    {"\n\t"}A mulher que possui um ou mais dos fatores genéticos/hereditários 
-                    é considerada com risco elevado para desenvolver câncer de mama.
-                    {"\n\t"}O câncer de mama de caráter genético/hereditário corresponde a apenas 
-                    5% a 10% do total de casos da doença.
-                    {"\n\t"}Atenção: A presença de um ou mais desses fatores de risco não significa 
-                    que a mulher necessariamente terá a doença.
+                Fatores de Proteção - Amamentação; - Prática regular de atividade física. Ambientais e Comportamentais - Excesso de peso; - Inatividade física; - Má alimentação; - Ingestão de álcool; - Uso de tabaco; - Exposição frequente a Raio X na região do tórax. História Reprodutiva e Hormonal - Menarca antes dos 12 anos; - Menopausa após os 55 anos; - Nuliparidade; - Primeira gravidez após os 30 anos; - Uso de contraceptivos hormonais (estrogênio-progesterona); - Reposição hormonal na pós-menopausa. Genéticos e Hereditários - História familiar de câncer no ovário; - História familiar de câncer de mama antes dos 50 anos; - História familiar de câncer de mama em homens; - Alteração genética nos genes BRCA1 e BRCA2. OBS.: A mulher que possui um ou mais dos fatores genéticos/hereditários é considerada com risco elevado para desenvolver câncer de mama. O câncer de mama de caráter genético/hereditário corresponde a apenas 5% a 10% do total de casos da doença. ATENÇÃO: A presença de um ou mais desses fatores de risco não significa que a mulher necessariamente terá a doença.
                 </Text>
             </View>
         </ScrollView>
@@ -83,17 +26,28 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: "#ffffff"
     },
-    informationText:{
-        marginHorizontal:10,
-        marginBottom:25
-    },  
-    bigText:{
-        fontSize:28,
-        fontWeight: "bold"
+    headerContainer:{
+        top: 66,
+        width:280,
+        height: 87,
+        left: 48
+    },
+    headerText:{
+        textAlign: "center",
+        fontSize: 34
+    },
+    textContainer:{
+        top:50,
+        alignItems: "center",
+        marginBottom: 170
     },
     text:{
-        fontSize:20,
-        textAlign: "justify",
-        fontWeight: "600"
+        fontSize:18,
+        marginHorizontal:10,
+        textAlign: "center",
+        letterSpacing: -0.43,
+        opacity: 0.7,
+        width: 298,
+        lineHeight: 41
     }
 })

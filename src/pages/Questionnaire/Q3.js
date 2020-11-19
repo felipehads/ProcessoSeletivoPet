@@ -1,32 +1,24 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import RNPickerSelect from 'react-native-picker-select';
-import FooterHome from '../../components/FooterHome';
-import HeaderBack from '../../components/HeaderBack';
 
 export default ({navigation}) => {
     return (
     <View style={styles.container}>
-        <View>
-            <HeaderBack textoPrincipal="CALCULADORA DE RISCO (GAIL)" navigation = {() => navigation.navigate("Q2")}/>
-        </View>
+        <Text style={styles.header}>
+            Calculadora de Risco(Gail)
+        </Text>
         <Text style={styles.bigText}>
             Dados demográficos
         </Text>
         <Text style={styles.text}>
-            3- Qual a idade da
-            paciente?
-        </Text>
-        <Text style={styles.obs}>
-            OBS.:
-            <Text style={styles.text}>
-            Esta ferramenta
+            3)- Qual a idade da
+            paciente? OBS: Esta ferramenta
             não calcula risco de
             desenvolver câncer de
             mama em mulheres com
             menos de 35 anos, nem
             com mais de 85.
-        </Text>
         </Text>
         
         <RNPickerSelect
@@ -91,33 +83,31 @@ export default ({navigation}) => {
 
             ]}
         />
-        <View>
-            <FooterHome navigation = {() => navigation.navigate("Homepage")}/>
-        </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex:1,
+        justifyContent:"center",
         backgroundColor: "#ffffff"
     },
-    bigText:{
-        fontSize:28,
+    header: {
+        fontSize:34,
         fontWeight: "bold",
-        marginBottom: 10,
-        textAlign: "center",
-        marginVertical: 10,
+        textAlign: "center"
     },
-    obs:{
-        fontSize:28,
-        fontWeight: "bold",
+    bigText:{
+        fontSize:22,
+        marginBottom: 40,
+        textAlign: "center",
     },
     text:{
-        fontSize:22,
-        textAlign: "justify",
+        fontSize:18,
+        textAlign: "center",
         fontWeight: "600",
-        marginHorizontal: 10
-    }
+        marginHorizontal: 20,
+        marginBottom: 40
+    },
 });

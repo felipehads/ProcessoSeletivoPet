@@ -9,7 +9,7 @@ const Homepage = ({navigation}) => {
                 <Text style={styles.text}>Muito bem! Agora selecione a opção desejada para começarmos</Text>
             </View>
             <View style={styles.button}>
-                <NewButton textoPrincipal="Calculadora de risco(Gail)" navigation = {() => navigation.navigate("Q1")}/>
+                <NewButton textoPrincipal="Calculadora de risco(Gail)" navigation = {() => navigation.navigate("Calculator")}/>
             </View>
             <View style={styles.button}>
                 <NewButton textoPrincipal="Acesso a informação" navigation = {() => navigation.navigate("Information")}/> 
@@ -17,12 +17,10 @@ const Homepage = ({navigation}) => {
             <View style={styles.button}>
                 <NewButton textoPrincipal="Sobre o aplicativo" navigation = {() => navigation.navigate("Sobre")}/>
             </View> 
-            </View>
+        </View>
     )
 }
 
-        
- 
 
 const styles = StyleSheet.create({
     container: {

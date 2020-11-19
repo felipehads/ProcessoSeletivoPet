@@ -7,8 +7,10 @@ import HeaderBack from '../components/HeaderBack';
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
-            <View style={styles.headerContainer}>
-                <HeaderBack textoPrincipal="SOBRE O APLICATIVO" navigation = {() => navigation.navigate("Homepage")}/>
+            <View>
+                <Text style ={styles.header}>
+                    SOBRE O{"\n"} APLICATIVO
+                </Text>
             </View>
             <View>
                 <Text style={styles.bigText}>
@@ -91,18 +93,23 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: "#ffffff"
     },
-    headerContainer:{
-        width: "100%"
+    header:{
+        fontSize:34,
+        marginTop: 50,
+        marginRight: 20,
+        fontWeight: "bold",
+        textAlign: "right"
     },
     bigText:{
         fontSize:25,
         fontWeight: "bold",
-        marginBottom: 10
+        marginVertical: 10,
+        marginLeft: 20,
     },
     text:{
         fontSize:18,
-        marginHorizontal:10,
+        marginHorizontal:30,
         textAlign: "justify",
-        fontWeight: "600"
+        fontWeight: "600",
     }
 })

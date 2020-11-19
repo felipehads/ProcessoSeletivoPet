@@ -12,6 +12,7 @@ import Secondary from './src/pages/Prevention/Secondary';
 import Diagnostic from './src/pages/Prevention/Secondary/Diagnostic';
 import Tracking from './src/pages/Prevention/Secondary/Tracking';
 import FirstPage from './src/pages/FirstPage';
+import Calculator from './src/pages/Calculator';
 import Q1 from './src/pages/Questionnaire/Q1';
 import Q2 from './src/pages/Questionnaire/Q2';
 import Q3 from './src/pages/Questionnaire/Q3';
@@ -75,6 +76,10 @@ const navigator = createStackNavigator({
   },
   FirstPage: {
     screen: FirstPage,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Calculator:{
+    screen: Calculator,
     navigationOptions: ({navigation}) => ({})
   },
   Q1: {

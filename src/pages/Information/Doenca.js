@@ -71,7 +71,7 @@ export default ({navigation}) => {
                 <Image style={styles.img} source={require('../../../assets/abaulamentoDaMama.png')}/>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.text}>
+                <Text style={styles.lastText}>
                     {"\t"}{"\t"}{"\t"}{"\t"} 
                     Abaulamento da mama, endurecimento ou retração da pele (casca de laranja), devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"}  OBS.: A paciente pode sentir dor ou não junto a esse sinais e sintomas.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"} Quais os tipos mais comuns? O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
                 </Text>
@@ -118,6 +118,17 @@ const styles = StyleSheet.create({
         width: 300,
         lineHeight: 27,
         color: "#707070"
+    },
+    lastText:{
+        marginTop:25,
+        fontSize:20,
+        textAlign: "left",
+        letterSpacing: 0,
+        opacity: 1,
+        width: 300,
+        lineHeight: 27,
+        color: "#707070",
+        marginBottom:30
     },
     firstImg:{
         width:206,

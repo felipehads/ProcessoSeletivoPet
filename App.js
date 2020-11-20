@@ -10,7 +10,8 @@ import Birads from './src/pages/Information/Birads';
 import Primary from './src/pages/Prevention/Primary';
 import Secondary from './src/pages/Prevention/Secondary';
 import Diagnostic from './src/pages/Prevention/Secondary/Diagnostic';
-import Tracking from './src/pages/Prevention/Secondary/Tracking';
+import TrackingHighRisk from './src/pages/Prevention/Secondary/TrackingHighRisk';
+import TrackingGeneralPopulation from './src/pages/Prevention/Secondary/TrackingGeneralPopulation';
 import FirstPage from './src/pages/FirstPage';
 import Calculator from './src/pages/Calculator';
 import Q1 from './src/pages/Questionnaire/Q1';
@@ -70,8 +71,12 @@ const navigator = createStackNavigator({
     screen: Diagnostic,
     navigationOptions: ({navigation}) => ({})
   },
-  Tracking: {
-    screen: Tracking,
+  TrackingHighRisk: {
+    screen: TrackingHighRisk,
+    navigationOptions: ({navigation}) => ({})
+  },
+  TrackingGeneralPopulation:{
+    screen: TrackingGeneralPopulation,
     navigationOptions: ({navigation}) => ({})
   },
   FirstPage: {

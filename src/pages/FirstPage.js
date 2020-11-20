@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const FirstPage = ({navigation}) => {
     return(
@@ -42,7 +43,6 @@ const FirstPage = ({navigation}) => {
                     <Image style={styles.buttonsImg} source={require('../../assets/physical-educator.png')}/>               
                 </TouchableOpacity>
             </View>
-
         </View>
     )
 }

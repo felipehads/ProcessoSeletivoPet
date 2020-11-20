@@ -1,47 +1,27 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
-import {TouchableOpacity } from 'react-native-gesture-handler';
-import HeaderBack from '../../components/HeaderBack';
-import FooterHome from '../../components/FooterHome';
+import {ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import NewButton from '../../components/NewButton';
 
 export default ({navigation}) => {
     return(
-        <View style={styles.container}>
-            <View>
-                <HeaderBack textoPrincipal="PREVENÇÃO" navigation = {() => navigation.navigate("Prevencao")}/>
+        <ScrollView style={styles.container}>
+            <View style={styles.headerContainer}>
+                <Text style={styles.headerText}>
+                    Prevenção Secundária
+                </Text>
             </View>
-            <Text style={styles.pinkText}>
-                Secundária
-            </Text>
-            <Text style={styles.text}>
-                    Diz respeito ao diagnóstico
-                    precoce e rastreamento, onde são
-                    identificadas, por meio de exames,
-                    as mulheres que têm risco de
-                    desenvolver o câncer de mama, e
-                    são tratadas em fase inicial,
-                    visando a diminuição da
-                    morbimortalidade da doença e a
-                    melhora da qualidade de vida das
-                    pacientes.
-            </Text>
+            <View style={styles.textContainer}>
+                <Text style={styles.text}>
+                Diz respeito ao diagnóstico precoce e rastreamento, onde são identificadas, por meio de exames, as mulheres que têm risco de desenvolver o câncer de mama, e são tratadas em fase inicial, visando a diminuição da morbimortalidade da doença e a melhora da qualidade de vida das pacientes.
+                </Text>
+            </View>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Tracking')}>
-                    <Text style={styles.bigText}>
-                        Rastreamento
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Diagnostic')}>
-                    <Text style={styles.bigText}>
-                        Diagnóstico precoce
-                    </Text>
-                </TouchableOpacity>
+                <NewButton textoPrincipal="RASTREAMENTO PARA POPULAÇÃO GERAL" navigation = {() => navigation.navigate("TrackingGeneralPopulation")}/>
+                <NewButton textoPrincipal="RASTREAMENTO PARA POPULAÇÃO DE ALTO RISCO" navigation = {() => navigation.navigate("TrackingHighRisk")}/>
+                <NewButton textoPrincipal="DIAGNÓSTICO PRECOCE" navigation = {() => navigation.navigate("Diagnostic")}/>
             </View>
-                
-            <View>
-                <FooterHome navigation = {() => navigation.navigate("Homepage")}/>
-            </View>
-        </View>
+        </ScrollView>
     )
 }
 
@@ -50,37 +30,35 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: "#ffffff"
     },
-    pinkText:{
-        fontSize: 25,
-        fontWeight: "bold",
-        color: "pink",
+    headerContainer:{
+        top: 77,
+        width:280,
+        height: 128,
+        left: 48
+    },
+    headerText:{
         textAlign: "center",
-        marginVertical: 10
-    },  
-    bigText:{
-        fontSize:25,
-        fontWeight: "bold",
-        marginBottom: 10,
-        textAlign: "center",
-        marginVertical: 10,
+        fontSize: 34,
+        letterSpacing: -0.82,
+        lineHeight: 41
+    },
+    textContainer:{
+        top: 50,
+        alignItems: "center"
     },
     text:{
         fontSize:18,
-        textAlign: "justify",
-        fontWeight: "600",
-        marginHorizontal:10
+        textAlign: "center",
+        letterSpacing: -0.43,
+        opacity: 0.7,
+        width: 298,
+        lineHeight: 41
     },
-    buttonsContainer:{
-        flex:1,
-        alignItems: "center"
-    },
-    buttonsEach: {
-        borderWidth: 3,
-        borderColor: "pink",
-        borderRadius: 15,
-        height: 80,
-        width: 300,
-        marginVertical: 10,
-        justifyContent: "center"
+    buttonsContainer: {
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: 70,
+        marginBottom: 40
     }
 })

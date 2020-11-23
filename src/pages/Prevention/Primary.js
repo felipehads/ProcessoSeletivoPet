@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import HeaderBack from '../../components/HeaderBack';
 
 export default ({navigation}) => {
     return(

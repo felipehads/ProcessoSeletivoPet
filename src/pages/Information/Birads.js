@@ -1,15 +1,12 @@
 import React from 'react';
 import {View, Text,StyleSheet, Image} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import HeaderBack from '../../components/HeaderBack';
+
 
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
-            <View>
-                <HeaderBack textoPrincipal="BI-RADS" navigation = {() => navigation.navigate("Information")}/>
-            </View>
             <View style={styles.informationText}>
                 <Text style={styles.bigText}>
                     Sistema de Laudos e

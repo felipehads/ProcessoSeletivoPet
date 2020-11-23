@@ -1,9 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import axios from 'axios';
-import HeaderBack from '../../components/HeaderBack';
-import FooterHome from '../../components/FooterHome';
+
 
 export default ({navigation}) => {
     return(
@@ -120,7 +118,7 @@ const styles = StyleSheet.create({
         marginTop: 50
     },
     buttonsEach:{
-        backgroundColor: "#ecb0cb",
+        backgroundColor: "#ee88b6",
         borderRadius: 5,
         height:50,
         width: 300,

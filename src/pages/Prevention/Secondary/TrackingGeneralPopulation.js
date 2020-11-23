@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import HeaderBack from '../../../components/HeaderBack';
 
 export default ({navigation}) => {
     return(
@@ -59,9 +58,7 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         top: 77,
-        width:288,
-        left:38,
-        alignItems: "center"
+        alignItems: "center",
     },
     headerText:{
         textAlign: "center",

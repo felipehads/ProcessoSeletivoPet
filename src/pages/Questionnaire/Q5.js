@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     },
     buttonsEach:{
         borderRadius: 5,
-        backgroundColor: "#ecb0cb",
+        backgroundColor: "#ee88b6",
         height: 70,
         width: 150,
         justifyContent: "center",
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     },
     lastButton:{
         borderRadius: 5,
-        backgroundColor: "#ecb0cb",
+        backgroundColor: "#ee88b6",
         height: 70,
         width: 250,
         justifyContent: "center"

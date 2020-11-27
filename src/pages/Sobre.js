@@ -1,14 +1,13 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { color } from 'react-native-reanimated';
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    SOBRE O APLICATIVO
+                    SOBRE {"\n"}O APLICATIVO
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -27,24 +26,20 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         top: 66,
-        width:280,
-        height: 87,
-        left: 48
+        marginBottom:40,
     },
     headerText:{
-        textAlign: "right",
+        textAlign: "center",
         fontSize: 34
     },
     textContainer:{
-        top:90,
         alignItems: "center",
-        marginBottom: 150
+        marginVertical:40
     },
     text:{
         fontSize:18,
         marginHorizontal:10,
         textAlign: "center",
-        letterSpacing: -0.43,
         opacity: 0.7,
         width: 298,
         lineHeight: 41

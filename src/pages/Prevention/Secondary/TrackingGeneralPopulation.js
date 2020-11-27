@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
     headerContainer:{
         top: 77,
         alignItems: "center",
+        
     },
     headerText:{
         textAlign: "center",

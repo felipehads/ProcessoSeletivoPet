@@ -87,12 +87,10 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         top: 66,
-        width:280,
-        height: 87,
-        left: 48
+        marginBottom:40
     },
     headerText:{
-        textAlign: "right",
+        textAlign: "center",
         fontSize: 34
     },
     textContainer:{

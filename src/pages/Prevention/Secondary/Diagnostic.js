@@ -7,7 +7,7 @@ export default ({navigation}) => {
         <ScrollView style={styles.container}>
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Diagnóstico Precoce
+                    Diagnóstico{"\n"}Precoce
                 </Text>
             </View>
             <View style={styles.firstText}>
@@ -50,9 +50,7 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         top: 77,
-        width:288,
-        left:38,
-        alignItems: "center"
+        marginBottom:20
     },
     headerText:{
         textAlign: "center",

@@ -7,7 +7,7 @@ export default ({navigation}) => {
         <ScrollView style={styles.container}>
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Prevenção Primária
+                    Prevenção{"\n"}Primária
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -28,12 +28,9 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         top: 81,
-        width:280,
-        height: 46,
-        left: 48
     },
     headerText:{
-        textAlign: "center",
+        textAlign:"center",
         fontSize: 34,
         letterSpacing: -0.82,
         lineHeight: 41
@@ -46,8 +43,7 @@ const styles = StyleSheet.create({
     },
     text:{
         fontSize:18,
-        textAlign: "center",
-        letterSpacing: -0.43,
+        textAlign:"justify",
         opacity: 0.7,
         width: 298,
         lineHeight: 41

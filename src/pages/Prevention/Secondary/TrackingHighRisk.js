@@ -26,9 +26,7 @@ const styles = StyleSheet.create({
     },
     headerContainer:{
         top: 77,
-        width:288,
-        left:43,
-        alignItems: "center"
+        marginBottom: 40
     },
     headerText:{
         textAlign: "center",

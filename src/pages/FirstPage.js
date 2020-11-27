@@ -5,7 +5,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 const FirstPage = ({navigation}) => {
     return(
         <View style={styles.container}>
-            <View style={styles.topContainer}>
+            <View>
                 <Text style={styles.header}>Bem-vindo(a) ao MAMAPrev.</Text>
             </View>
             <View>
@@ -49,13 +49,10 @@ const FirstPage = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        flexDirection: "column",
-        alignItems: "center",
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center",
         backgroundColor: "#ffffff"
-    },
-    topContainer: {
-        marginTop: 75
     },
     header: {
         textAlign: "center",

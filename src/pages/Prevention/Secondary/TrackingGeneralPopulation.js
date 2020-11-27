@@ -36,11 +36,19 @@ export default ({navigation}) => {
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    O INCA apresenta ausência para recomendação desse exame, pois o balanço entre possíveis danos e benefícios é incerto. A SBM preconiza que este deve ser efetuado por profissional qualificado e com frequência anual a partir dos 35 anos de idade.{"\n"}{"\n"} Ressonância nuclear magnética{"\n"}{"\n"} É um exame que mostra imagens em alta definição, através de campos magnéticos e pulsos de radiofrequência. Apresenta alta sensibilidade e pode detectar canceres de mama que a mamografia e a ultrassonografia não conseguem. Além disso, ao contrário da mamografia, a ressonância magnética não utiliza radiação ionizante. {"\n"}{"\n"}Apesar disso, O INCA e a SBM recomendam ‘contra’ a realização deste tipo de procedimento para rastreamento para a população geral, pois tem alto custo e baixa disponibilidade e, por isso, apenas em casos específicos, pode ser realizada em mulheres com alto risco de desenvolver a doença.{"\n"}{"\n"} Ultrassonografia{"\n"}{"\n"} É um exame de imagem realizado pelo aparelho transdutor que emite ondas sonoras de alta frequência causando vibração nos tecidos. Porém essas imagens possuem menos definição que a emitida pela ressonância. O objetivo desse exame é também de identificar possíveis alterações nas mamas. Muitas vezes, o uso da ultrassonografia como teste de rastreamento é feito com a intenção de complementar a mamografia realizada em mulheres jovens com mamas densas e resultado negativo, visando aumentar a sensibilidade do rastreamento.
+                    O INCA apresenta ausência para recomendação desse exame, pois o balanço entre possíveis danos e benefícios é incerto. A SBM preconiza que este deve ser efetuado por profissional qualificado e com frequência anual a partir dos 35 anos de idade.{"\n"}{"\n"} Ressonância nuclear magnética{"\n"}{"\n"} É um exame que mostra imagens em alta definição, através de campos magnéticos e pulsos de radiofrequência. Apresenta alta sensibilidade e pode detectar canceres de mama que a mamografia e a ultrassonografia não conseguem. Além disso, ao contrário da mamografia, a ressonância magnética não utiliza radiação ionizante.
                 </Text>
             </View>
             <View style={styles.imgContainer}>
-                <Image style={styles.img4} source={require('../../../../assets/ultrassom.png')}/>
+                <Image style={styles.img4} source={require('../../../../assets/ressonanciaMagnetica.png')}/>
+            </View>
+            <View style={styles.textContainer}>
+                <Text style={styles.text}>
+                    Apesar disso, O INCA e a SBM recomendam ‘contra’ a realização deste tipo de procedimento para rastreamento para a população geral, pois tem alto custo e baixa disponibilidade e, por isso, apenas em casos específicos, pode ser realizada em mulheres com alto risco de desenvolver a doença.{"\n"}{"\n"} Ultrassonografia{"\n"}{"\n"} É um exame de imagem realizado pelo aparelho transdutor que emite ondas sonoras de alta frequência causando vibração nos tecidos. Porém essas imagens possuem menos definição que a emitida pela ressonância. O objetivo desse exame é também de identificar possíveis alterações nas mamas. Muitas vezes, o uso da ultrassonografia como teste de rastreamento é feito com a intenção de complementar a mamografia realizada em mulheres jovens com mamas densas e resultado negativo, visando aumentar a sensibilidade do rastreamento.
+                </Text>
+            </View>
+            <View style={styles.imgContainer}>
+                <Image style={styles.img5} source={require('../../../../assets/ultrassom.png')}/>
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.lastText}>
@@ -106,6 +114,10 @@ const styles = StyleSheet.create({
         height:383,
     },
     img4:{
+        width:335,
+        height:320,
+    },
+    img5:{
         width:335,
         height:244,
     },

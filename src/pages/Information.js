@@ -12,9 +12,9 @@ export default ({navigation}) => {
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <NewButton textoPrincipal="Doença" navigation = {() => navigation.navigate("Doenca")}/>
-                <NewButton textoPrincipal="Fatores de risco" navigation = {() => navigation.navigate("Risco")}/>
-                <NewButton textoPrincipal="Prevenção" navigation = {() => navigation.navigate("Prevencao")}/>
+                <NewButton textoPrincipal="DOENÇA" navigation = {() => navigation.navigate("Doenca")}/>
+                <NewButton textoPrincipal="FATORES DE RISCO" navigation = {() => navigation.navigate("Risco")}/>
+                <NewButton textoPrincipal="PREVENÇÃO" navigation = {() => navigation.navigate("Prevencao")}/>
                 <NewButton textoPrincipal="BI-RADS" navigation = {() => navigation.navigate("Birads")}/>
             </View>
         </View>

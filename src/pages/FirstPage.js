@@ -6,7 +6,7 @@ const FirstPage = ({navigation}) => {
     return(
         <View style={styles.container}>
             <View>
-                <Text style={styles.header}>Bem-vindo(a) ao MAMAPrev.</Text>
+                <Text style={styles.header}>BEM-VINDO(A) AO MAMAPREV.</Text>
             </View>
             <View>
                 <Text style={styles.text}>Este é um aplicativo voltado aos profissionais da saúde. Por favor, selecione sua área de atuação.</Text>
@@ -56,20 +56,24 @@ const styles = StyleSheet.create({
     },
     header: {
         textAlign: "center",
-        fontSize: 30,
+        fontSize: 28,
+        fontWeight:"bold",
+        color:"#ee88b6"
     },
     text:{
         textAlign:"center",
         fontSize:16,
         color: "#808080",
-        marginHorizontal: 50
+        marginHorizontal: 50,
+        marginBottom: 40
     },
     buttonsContainer:{
         flexDirection: "row",
+    
     },
     buttonsImg:{
         width: 125,
-        height: 125
+        height: 90
     },
     buttonsEach:{
         marginHorizontal: 15

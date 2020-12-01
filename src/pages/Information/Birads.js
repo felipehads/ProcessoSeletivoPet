@@ -1,12 +1,12 @@
 import React from 'react';
-import {View, Text,StyleSheet, Image} from 'react-native';
+import {View, Text,StyleSheet, StatusBar} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-
 
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
+            <StatusBar hidden={true} />
             <View style={styles.informationText}>
                 <Text style={styles.bigText}>
                     Sistema de Laudos e

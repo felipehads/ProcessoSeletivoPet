@@ -1,14 +1,15 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
-import {ScrollView, TouchableOpacity } from 'react-native-gesture-handler';
+import {View, Text, StyleSheet, StatusBar} from 'react-native';
+import {ScrollView} from 'react-native-gesture-handler';
 import NewButton from '../../components/NewButton';
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
+            <StatusBar hidden={true} />
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Prevenção{"\n"}Secundária
+                    PREVENÇÃO{"\n"}SECUNDÁRIA
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -31,16 +32,16 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff"
     },
     headerContainer:{
-        top: 77,
+        marginTop: 40,
         marginBottom: 40,
     },
     headerText:{
         textAlign: "center",
         fontSize: 34,
-        lineHeight: 41
+        lineHeight: 41,
+        color: "#ee88b6"
     },
     textContainer:{
-        marginTop:50,
         alignItems: "center"
     },
     text:{
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 70,
+        marginTop: 30,
         marginBottom: 40
     }
 })

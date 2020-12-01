@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, StatusBar } from "react-native";
 import RNPickerSelect from 'react-native-picker-select';
 
 export default ({navigation}) => {
     return (
     <View style={styles.container}>
+        <StatusBar hidden={true} />
         <Text style={styles.header}>
-            Calculadora de Risco(Gail)
+            CALCULADORA DE RISCO(GAIL)
         </Text>
         <Text style={styles.bigText}>
-            Dados demográficos
+            DADOS DEMOGRÁFICOS
         </Text>
         <Text style={styles.text}>
             3)- Qual a idade da
@@ -96,12 +97,15 @@ const styles = StyleSheet.create({
     header: {
         fontSize:34,
         fontWeight: "bold",
-        textAlign: "center"
+        textAlign: "center",
+        color: "#ee88b6"
     },
     bigText:{
         fontSize:22,
         marginBottom: 40,
         textAlign: "center",
+        color: "#ee88b6",
+        marginTop: 35
     },
     text:{
         fontSize:18,

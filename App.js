@@ -29,7 +29,6 @@ import Q8 from './src/pages/Questionnaire/Q8';
 import Results from './src/pages/Questionnaire/Results';
 
 
-
 const navigator = createStackNavigator({
   Homepage: {
     screen: Homepage,
@@ -144,7 +143,7 @@ const navigator = createStackNavigator({
   initialRouteName: 'FirstPage',
   defaultNavigationOptions: {
     title: '',
-    headerShown: false
+    headerShown: false,
     // headerStyle:{
     //   backgroundColor: "#00b3fe"
     // }

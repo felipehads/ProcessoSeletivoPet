@@ -1,13 +1,15 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Text, StyleSheet, StatusBar} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
+            <StatusBar hidden={true} />
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Rastreamento para população de alto risco
+                    RASTREAMENTO PARA POPULAÇÃO DE ALTO RISCO
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -25,20 +27,20 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff"
     },
     headerContainer:{
-        top: 77,
-        marginBottom: 40
+        marginTop: 40,
+        marginBottom: 30
     },
     headerText:{
         textAlign: "center",
         fontSize: 34,
         letterSpacing: -0.82,
         lineHeight: 41,
-        fontWeight: "600"
+        fontWeight: "600",
+        color: "#ee88b6"
     },
     textContainer:{
         alignItems: "center",
-        top:80,
-        marginBottom: 100
+        marginBottom: 30
     },
     text:{
         fontSize:18,

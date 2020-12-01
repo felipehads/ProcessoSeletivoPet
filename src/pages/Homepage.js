@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet} from 'react-native';
+import {View,Text, StyleSheet, StatusBar} from 'react-native';
 import NewButton from '../components/NewButton';
 
 const Homepage = ({navigation}) => {
     return(
         <View style={styles.container}> 
+            <StatusBar hidden={true} />
             <View style={styles.button}>
                 <Text style={styles.text}>Muito bem! Agora selecione a opção desejada para começarmos</Text>
             </View>
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
     text:{
         textAlign:"center",
         fontSize:20,
-        color: "#808080",
+        color: "#ee88b6",
         marginHorizontal: 50,
         marginBottom: 50,
     },

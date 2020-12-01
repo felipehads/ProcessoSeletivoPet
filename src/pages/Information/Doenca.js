@@ -1,27 +1,33 @@
 import React from 'react';
-import {View, Text,StyleSheet, Image} from 'react-native';
+import {View, Text,StyleSheet, Image, StatusBar} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
+            <StatusBar hidden={true} />
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Doença
+                    DOENÇA
                 </Text>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.firstText}>
+                <Text style={styles.titleText}>
                     O que é câncer de mama?{"\n"}
                 </Text>
              </View>
             <View style={styles.imgContainer}>
-                <Image style={styles.firstImg} source={require('../../../assets/D1.png')}/>
+                <Image style={styles.img} source={require('../../../assets/D1.png')}/>
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"}O câncer de mama é uma doença causada pela multiplicação desordenada de células da mama. Esse processo gera células anormais que se multiplicam, formando um tumor.{"\n"}{"\n"}
-                    Como ele se manifesta? {"\n"}{"\t"}{"\t"}{"\t"}{"\t"}Na maioria se manifesta com um nódulo na mama, mas também pode se apresentar de outras formas:
+                    {"\t"}{"\t"}{"\t"}{"\t"}O câncer de mama é uma doença causada pela multiplicação desordenada de células da mama. Esse processo gera células anormais que se multiplicam, formando um tumor.
+                </Text>
+                <View style={styles.textContainer}>
+                    <Text style={styles.titleText}>Como ele se manifesta?</Text>
+                </View>
+                <Text style={styles.text}>
+                    {"\t"}{"\t"}{"\t"}{"\t"}Na maioria se manifesta com um nódulo na mama, mas também pode se apresentar de outras formas:
                 </Text>
             </View>
             <View style={styles.imgContainer}>
@@ -73,9 +79,24 @@ export default ({navigation}) => {
             <View style={styles.textContainer}>
                 <Text style={styles.lastText}>
                     {"\t"}{"\t"}{"\t"}{"\t"} 
-                    Abaulamento da mama, endurecimento ou retração da pele (casca de laranja), devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"}  OBS.: A paciente pode sentir dor ou não junto a esse sinais e sintomas.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"} Quais os tipos mais comuns? O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
+                    Abaulamento da mama, endurecimento ou retração da pele (casca de laranja), devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"}  OBS.: A paciente pode sentir dor ou não junto a esse sinais e sintomas.
+                </Text>
+                <View style={styles.textContainer}>
+                    <Text style={styles.titleText}>
+                        Quais os tipos mais comuns?
+                    </Text>
+                </View >
+                <Text style={styles.text}>
+                    {"\t"}{"\t"}{"\t"}{"\t"}O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
                 </Text>
             </View>
+            <View style={styles.imgContainer}>
+                <Image style={styles.lastImg} source={require('../../../assets/carcinomaDuctal.png')}/>
+                <Text style={styles.refText}>Referência: Cancer Research UK/ Wikimedia Commons</Text>
+                <Image style={styles.lastImg} source={require('../../../assets/carcinomaLobular.png')}/>
+                <Text style={styles.refText}>Referência: Cancer Research UK/ Wikimedia Commons</Text>
+            </View>
+
         </ScrollView>
     )
 }
@@ -86,26 +107,26 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff"
     },
     headerContainer:{
-        top: 66,
+        top: 36,
         marginBottom:40
     },
     headerText:{
         textAlign: "center",
-        fontSize: 34
+        fontSize: 34,
+        color: "#ee88b6"
     },
     textContainer:{
         alignItems: "center",
         marginTop: 15
     },
-    firstText:{
-        top:40,
+    titleText:{
         fontSize:20,
         textAlign: "left",
         letterSpacing: 0,
         opacity: 1,
         width: 300,
         lineHeight: 27,
-        color: "#707070"
+        color: "#ee88b6"
     },
     text:{
         marginTop:25,
@@ -128,11 +149,6 @@ const styles = StyleSheet.create({
         color: "#707070",
         marginBottom:30
     },
-    firstImg:{
-        width:206,
-        height:206,
-        marginTop: 80
-    },
     img:{
         width:206,
         height:206,
@@ -140,20 +156,12 @@ const styles = StyleSheet.create({
     imgContainer:{
         alignItems: "center"
     },
-    bottomImageContainer:{
-        flex:1,
-        flexDirection:"row",
+    lastImg:{
+        marginTop: 25,
+        width: 326,
+        height: 384
     },
-    bottomBox:{
-        margin: 10
-    },  
-    bottomImage:{
-        width:120,
-        height:120,
-        margin:15
-    },
-    bottomText: {
-        textAlign: "center",
-        fontSize: 16
+    refText:{
+        fontSize: 10
     }
 })

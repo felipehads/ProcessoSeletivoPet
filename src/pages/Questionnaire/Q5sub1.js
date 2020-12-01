@@ -1,15 +1,16 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, Alert} from 'react-native';
+import {View, Text, StyleSheet, StatusBar} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default ({navigation}) => {
     return(
     <View style={styles.container}>
+        <StatusBar hidden={true} />
         <Text style={styles.header}>
-            Calculadora de Risco(Gail)
+            CALCULADORA DE RISCO(GAIL)
         </Text>
         <Text style={styles.bigText}>
-            Paciente e Histórico Familiar
+            PACIENTE E HISTÓRICO FAMILIAR
         </Text>
         <Text style={styles.text}>
             5.1)-Quantas biópsias de 
@@ -58,12 +59,15 @@ const styles = StyleSheet.create({
     header: {
         fontSize:34,
         fontWeight: "bold",
-        textAlign: "center"
+        textAlign: "center",
+        color: "#ee88b6"
     },
     bigText:{
         fontSize:22,
         marginBottom: 40,
         textAlign: "center",
+        color: "#ee88b6",
+        marginTop: 35
     },
     text:{
         fontSize:18,

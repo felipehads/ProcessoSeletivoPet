@@ -1,15 +1,15 @@
 import React from 'react';
-import {View, Text,StyleSheet, Image} from 'react-native';
+import {View, Text,StyleSheet, StatusBar} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-
 
 
 export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
+            <StatusBar hidden={true} />
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Fatores de risco
+                    FATORES DE RISCO
                 </Text>
             </View>
             <View style={styles.textContainer}>
@@ -32,7 +32,8 @@ const styles = StyleSheet.create({
     },
     headerText:{
         textAlign: "center",
-        fontSize: 34
+        fontSize: 34,
+        color: "#ee88b6"
     },
     textContainer:{
         top:50,

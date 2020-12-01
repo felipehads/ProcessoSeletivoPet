@@ -1,18 +1,19 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, Alert} from 'react-native';
+import {View, Text, StyleSheet, StatusBar} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default ({navigation}) => {
     return(
     <View style={styles.container}>
+        <StatusBar hidden={true} />
         <Text style={styles.header}>
-            Calculadora de Risco(Gail)
+            CALCULADORA DE RISCO(GAIL)
         </Text>
         <Text style={styles.bigText}>
-            Dados Demográficos
+            DADOS DEMOGRÁFICOS
         </Text>
         <Text style={styles.text}>
-            4-Qual a sub-etnia/sub-raça da paciente?
+            4.1-Qual a sub-etnia/sub-raça da paciente?
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5', {
@@ -95,12 +96,15 @@ const styles = StyleSheet.create({
     header: {
         fontSize:34,
         fontWeight: "bold",
-        textAlign: "center"
+        textAlign: "center",
+        color: "#ee88b6"
     },
     bigText:{
         fontSize:22,
         marginBottom: 40,
         textAlign: "center",
+        color: "#ee88b6",
+        marginTop: 35
     },
     text:{
         fontSize:18,

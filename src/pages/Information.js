@@ -1,14 +1,15 @@
 import React from 'react';
-import {View,Text, StyleSheet} from 'react-native';
+import {View,Text, StyleSheet,StatusBar} from 'react-native';
 import NewButton from '../components/NewButton';
 
 
 export default ({navigation}) => {
     return(
         <View style={styles.container}>
+            <StatusBar hidden={true} />
             <View style={styles.headerContainer}>
                 <Text style={styles.headerText}>
-                    Acesso à informação
+                    ACESSO À INFORMAÇÃO
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
@@ -32,7 +33,7 @@ const styles = StyleSheet.create({
         height: 87,
         textAlign: "center",
         letterSpacing: -0.82,
-        color: "#000000",
+        color: "#ee88b6",
         opacity: 1
     },
     container: {

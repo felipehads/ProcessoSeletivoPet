@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, StatusBar} from 'react-native';
+import {View, Text, StyleSheet, Image, StatusBar} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default ({navigation}) => {
@@ -52,9 +52,13 @@ export default ({navigation}) => {
                 value3: navigation.getParam('value3', ''),
                 value4: 'Hispanic'
             })}>
-                <Text style={styles.buttonText}>
-                    Hispânica/Latina
-                </Text>
+                <View style={styles.brButton}>
+                    <Text style={styles.buttonText}>
+                        Hispânica/Latina
+                    </Text>
+                    
+                    <Image style={styles.iconBr}source={require('../../../assets/IconBr.png')}/> 
+                </View>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
                 value1: navigation.getParam('value1', ''),
@@ -80,7 +84,6 @@ export default ({navigation}) => {
     </View>
     )
 }
-
 const styles = StyleSheet.create({
     container: {
         flex:1,
@@ -126,5 +129,15 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold",
         color:"#ffffff"
+    },
+    iconBr:{
+        width:35,
+        height:35,
+        marginLeft: 10
+    },
+    brButton: {
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center"
     }
 })

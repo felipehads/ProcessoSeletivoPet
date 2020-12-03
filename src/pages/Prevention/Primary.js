@@ -35,10 +35,13 @@ export default ({navigation}) => {
             <View style={styles.imgContainerSquare}>
                 <Image style={styles.img3} source={require('../../../assets/quimioprevencao.png')}/>
             </View>
-            <View style={styles.lastTextContainer}>
+            <View style={styles.textContainer}>
                 <Text style={styles.text}>
                     Quimioprevenção para mulheres com alto risco de desenvolver o câncer de mama De acordo com o INCA, o SUS não utiliza medicamentos quimiopreventivos. De acordo com a SBM: Pacientes com risco de Gail ≥ 1.7, mais de 35 anos de idade, expectativa de vida superior a 10 anos ou com carcinoma lobular in situ devem usar um desses medicamentos por 5 anos:
                 </Text>
+            </View>
+            <View style={styles.imgContainer}>
+                <Image style={styles.img4} source={require('../../../assets/tabelaDoenca.png')}/>
             </View>
             
             
@@ -78,11 +81,6 @@ const styles = StyleSheet.create({
         width: 298,
         lineHeight: 41
     },
-    lastTextContainer:{
-        alignItems: "center",
-        marginHorizontal: 38,
-        marginBottom: 30
-    },
     imgContainer:{
         alignItems: "center",
         marginVertical: 30
@@ -101,5 +99,9 @@ const styles = StyleSheet.create({
     img3:{
         width: 300,
         height: 300
+    },
+    img4:{
+        width: 340,
+        height: 278
     }
 })

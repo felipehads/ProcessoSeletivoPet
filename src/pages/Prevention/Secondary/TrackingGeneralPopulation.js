@@ -85,7 +85,7 @@ export default ({navigation}) => {
                 <Image style={styles.img5} source={require('../../../../assets/ultrassom.png')}/>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.lastText}>
+                <Text style={styles.text}>
                     O INCA e a SBM recomendam ‘contra’ a realização deste tipo de procedimento para rastreamento.
                 </Text>
                 <View style={styles.textContainer}>
@@ -94,16 +94,33 @@ export default ({navigation}) => {
                     </Text>
                 </View>
                 <Text style={styles.text}>                    
-                    É um exame de imagem que registra a variação da temperatura cutânea. Por se tratar de um procedimento não invasivo, não expõe a pessoa à radiação, nem requer a compressão do tecido da mama.{"\n"}{"\n"} O INCA recomenda 'contra' a realização deste procedimento para rastreamento e a SBM não o menciona.
+                    É um exame de imagem que registra a variação da temperatura cutânea. Por se tratar de um procedimento não invasivo, não expõe a pessoa à radiação, nem requer a compressão do tecido da mama.
                 </Text>
-                <View style={styles.textContainer}>
-                    <Text style={styles.titleText}>
-                        Tomossíntese
-                    </Text>
+                <View style={styles.imgContainer}>
+                    <Image style={styles.img6} source={require('../../../../assets/termografia.jpg')}/>
                 </View>
-
-                <Text style={styles.lastText}> 
-                    É um exame 3D que permite uma melhor identificação de nódulos e lesões em mamas mais densas, pois apresenta múltiplas e finas imagens da mama obtidas a partir de diferentes ângulos, enquanto a mama permanece estática e ligeiramente comprimida, permitindo cortes finos, passíveis de serem reconstruídos pelo computador em imagens tridimensionais. Este tipo de exame aumenta a dose total de radiação ionizante recebida pelas mulheres. {"\n"}{"\n"}O INCA recomenda 'contra' a realização deste procedimento para rastreamento e a SBM não o menciona.
+                <View style={styles.refTextContainer}>
+                    <Text style={styles.refText}>Referência: The Centre for Vibrant Health and wellness - Breast Thermal Imaging. Disponível em: https://www.drsalter.com/breast-thermal-imaging/ </Text>
+                </View>
+                
+                <Text style={styles.text}>
+                    O INCA recomenda 'contra' a realização deste procedimento para rastreamento e a SBM não o menciona.
+                </Text>
+                <Text style={styles.titleText}>
+                    Tomossíntese
+                </Text>
+                <Text style={styles.text}> 
+                    É um exame 3D que permite uma melhor identificação de nódulos e lesões em mamas mais densas, pois apresenta múltiplas e finas imagens da mama obtidas a partir de diferentes ângulos, enquanto a mama permanece estática e ligeiramente comprimida, permitindo cortes finos, passíveis de serem reconstruídos pelo computador em imagens tridimensionais. Este tipo de exame aumenta a dose total de radiação ionizante recebida pelas mulheres.
+                </Text>
+                <View style={styles.imgContainer}>
+                    <Image style={styles.img7} source={require('../../../../assets/tomo.jpg')}/>
+                </View>
+                <View style={styles.refTextContainer}>
+                    <Text style={styles.refText}>Referência: SMITH, A. Fundamentals of Breast Tomosynthesis: Improving the Performance of Mammography. Figura 5: Reconstructed Tomosynthesis Slices. 2008. Disponível em: http://www.hologic.ca/sites/default/files/Fundamentals%20of%20Breast%20Tomosynthesis_WP-00007.pdf </Text>
+                </View>
+                
+                <Text style={styles.lastText}>
+                    O INCA recomenda 'contra' a realização deste procedimento para rastreamento e a SBM não o menciona.
                 </Text>
             </View>
         </ScrollView>
@@ -161,7 +178,7 @@ const styles = StyleSheet.create({
     },
     img1:{
         width:441,
-        height:464,
+        height:404,
     },
     img2:{
         width:346,
@@ -178,8 +195,27 @@ const styles = StyleSheet.create({
     img5:{
         width:335,
         height:244,
+        marginTop: 10
+    },
+    img6:{
+        width:246,
+        height:205,
+        marginVertical: 5
+    },
+    img7: {
+        width:198,
+        height: 126,
+        marginVertical: 5
     },
     imgContainer:{
         alignItems: "center",
     },
+    refTextContainer:{
+        alignItems: "center",
+        marginVertical: 5
+    },
+    refText:{
+        fontSize: 10,
+        textAlign: "center"
+    }
 })

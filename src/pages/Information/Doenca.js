@@ -90,7 +90,7 @@ export default ({navigation}) => {
                     {"\t"}{"\t"}{"\t"}{"\t"}O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
                 </Text>
             </View>
-            <View style={styles.imgContainer}>
+            <View style={styles.lastImgContainer}>
                 <Image style={styles.lastImg} source={require('../../../assets/carcinomaDuctal.png')}/>
                 <Text style={styles.refText}>Referência: Cancer Research UK/ Wikimedia Commons</Text>
                 <Image style={styles.lastImg} source={require('../../../assets/carcinomaLobular.png')}/>
@@ -155,6 +155,11 @@ const styles = StyleSheet.create({
     },
     imgContainer:{
         alignItems: "center"
+    },
+    lastImgContainer:{
+        alignItems: "center",
+        marginBottom: 20
+        
     },
     lastImg:{
         marginTop: 25,

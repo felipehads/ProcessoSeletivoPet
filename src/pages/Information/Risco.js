@@ -27,7 +27,7 @@ export default ({navigation}) => {
             <View style={styles.textContainer}>
                 <Text style={styles.titleText}>História Reprodutiva e Hormonal</Text>
                 <Text style={styles.text}>
-                    - Menarca antes dos 12 anos; - Menopausa após os 55 anos; - Nuliparidade; - Primeira gravidez após os 30 anos; - Uso de contraceptivos hormonais (estrogênio-progesterona); - Reposição hormonal na pós-menopausa. 
+                    - Menarca antes dos 12 anos;{"\n"}- Menopausa após os 55 anos;{"\n"}- Nuliparidade;{"\n"}- Primeira gravidez após os 30 anos;{"\n"}- Uso de contraceptivos hormonais (estrogênio-progesterona);{"\n"}- Reposição hormonal na pós-menopausa. 
                 </Text>
             </View>
             <View style={styles.textContainer}>

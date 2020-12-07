@@ -14,7 +14,7 @@ export default ({navigation}) => {
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    Refere-se a aplicação de testes ou exames em uma população sem sinais e sintomas sugestivos da doença, para identificar possíveis alterações sugestivas de câncer e, posteriormente, encaminhar as mulheres com resultados anormais para investigação diagnóstica.{"\n"} Cabe ressaltar, que as recomendações para os exames estão associadas a diminuição comprovada da morbimortalidade.
+                    Refere-se a aplicação de testes ou exames em uma população sem sinais e sintomas sugestivos da doença, para identificar possíveis alterações sugestivas de câncer e, posteriormente, encaminhar as mulheres com resultados anormais para investigação diagnóstica.{"\n"}{"\n"} Cabe ressaltar, que as recomendações para os exames estão associadas a diminuição comprovada da morbimortalidade.
                 </Text>
                 <View style={styles.textContainer}>
                     <Text style={styles.titleText}>Mamografia</Text>
@@ -28,7 +28,7 @@ export default ({navigation}) => {
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    O INCA recomenda a realização desse exame de 50 à 69 anos a cada dois anos. Além disso, mulheres com risco aumentado de desenvolver câncer de mama, relacionados aos fatores genéticos e hereditários, devem iniciar o acompanhamento com exme clínico das mamas e mamografia aos 35 anos. A SBM recomenda de 40 à 69 anos anualmente. A mulher com casos de câncer de mama e/ou ovário na família (mãe, irmã ou filha), ou mutações genéticas, deverá começar fazer a mamografia mais cedo, conforme orientação do seu mastologista.
+                    O INCA recomenda a realização desse exame de 50 à 69 anos a cada dois anos. Além disso, mulheres com risco aumentado de desenvolver câncer de mama, relacionados aos fatores genéticos e hereditários, devem iniciar o acompanhamento com exme clínico das mamas e mamografia aos 35 anos.{"\n"}{"\n"} A SBM recomenda de 40 à 69 anos anualmente. {"\n"}{"\n"} A mulher com casos de câncer de mama e/ou ovário na família (mãe, irmã ou filha), ou mutações genéticas, deverá começar fazer a mamografia mais cedo, conforme orientação do seu mastologista.
                 </Text>
                 <View style={styles.textContainer}>
                     <Text style={styles.titleText}>Autoexame das mamas</Text>
@@ -56,7 +56,7 @@ export default ({navigation}) => {
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    O INCA apresenta ausência para recomendação desse exame, pois o balanço entre possíveis danos e benefícios é incerto. A SBM preconiza que este deve ser efetuado por profissional qualificado e com frequência anual a partir dos 35 anos de idade.
+                    O INCA apresenta ausência para recomendação desse exame, pois o balanço entre possíveis danos e benefícios é incerto.{"\n"}{"\n"} A SBM preconiza que este deve ser efetuado por profissional qualificado e com frequência anual a partir dos 35 anos de idade.
                 </Text>
                 <View style={styles.textContainer}>
                     <Text style={styles.titleText}>Ressonância nuclear magnética</Text>
@@ -147,7 +147,7 @@ const styles = StyleSheet.create({
     },
     textContainer:{
         alignItems: "center",
-        marginTop: 30
+        marginTop: 20
     },
     titleText:{
         fontSize:18,
@@ -177,8 +177,8 @@ const styles = StyleSheet.create({
         marginBottom: 69
     },
     img1:{
-        width:441,
-        height:404,
+        width:340,
+        height:340
     },
     img2:{
         width:346,

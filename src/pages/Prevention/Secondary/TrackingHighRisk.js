@@ -14,31 +14,31 @@ export default ({navigation}) => {
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    As pacientes que apresentam um risco aumentado para o surgimento do câncer de mama devem receber uma abordagem diferente para o diagnóstico precoce quando comparadas à população geral.{"\n"}{"\n"}De acordo com a SBM, as seguintes condições estão associadas a um maior risco de desenvolvimento de câncer de mama e devem receber uma atenção diferenciada para o diagnóstico precoce : 
+                    As pacientes que apresentam um risco aumentado para o surgimento do câncer de mama devem receber uma abordagem diferente para o diagnóstico precoce quando comparadas à população geral.{"\n"}De acordo com a SBM, as seguintes condições estão associadas a um maior risco de desenvolvimento de câncer de mama e devem receber uma atenção diferenciada para o diagnóstico precoce : 
                 </Text>
                 <Text style={styles.titleText}>
                     História prévia de câncer de mama
                 </Text>
                 <Text style={styles.text}>
-                    - Exame físico a cada seis meses nos primeiros 2 anos e depois anualmente;{"\n"}{"\n"}- Mamografia anual ou seis meses após o término do tratamento conservador (unilateral na mama operada);{"\n"}{"\n"}- Ultrassonografia das mamas deve ser utilizado se a mamografia for classe BIRADS 0;{"\n"}{"\n"}- Ressonância magnética das mamas na suspeita de recidiva após tratamento conservador ou esclarecer dúvidas após Mamografia ou Ultrassonografia das mamas.
+                    - Exame físico a cada seis meses nos primeiros 2 anos e depois anualmente;{"\n"}- Mamografia anual ou seis meses após o término do tratamento conservador (unilateral na mama operada);{"\n"}- Ultrassonografia das mamas deve ser utilizado se a mamografia for classe BIRADS 0;{"\n"}- Ressonância magnética das mamas na suspeita de recidiva após tratamento conservador ou esclarecer dúvidas após Mamografia ou Ultrassonografia das mamas.
                 </Text>
                 <Text style={styles.titleText}> 
                     Pacientes com risco de Gail maior ou igual a 1.7% de desenvolver câncer de mama em 5 anos (a partir dos 35 anos de idade)
                 </Text>
                 <Text style={styles.text}>
-                    - Exame clínico a cada 6-12 meses (iniciar na idade em que o risco de Gail seja maior ou igual a 1.7%);{"\n"}{"\n"}- Mamografia anual.
+                    - Exame clínico a cada 6-12 meses (iniciar na idade em que o risco de Gail seja maior ou igual a 1.7%);{"\n"}- Mamografia anual.
                 </Text>
                 <Text style={styles.titleText}>
                     Mulheres com risco maior que 20% de desenvolver câncer de mama ao longo da vida (“lifetime risk”) com antecedentes de carcinoma lobular in situ (CLIS) ou hiperplasia ductal atípica (HDA) ou hiperplasia lobular atípica (HLA)
                 </Text>
                 <Text style={styles.text}>
-                    - Exame clínico a cada 6-12 meses após o diagnóstico de CLIS, HDA ou HLA;{"\n"}{"\n"}- Mamografia anual, iniciar após o diagnóstico (não iniciar antes dos 30 anos de idade);{"\n"}{"\n"}- Se disponível considerar Ressonância Magnética das Mamas (não antes dos 25 anos de idade).
+                    - Exame clínico a cada 6-12 meses após o diagnóstico de CLIS, HDA ou HLA;{"\n"}- Mamografia anual, iniciar após o diagnóstico (não iniciar antes dos 30 anos de idade);{"\n"}- Se disponível considerar Ressonância Magnética das Mamas (não antes dos 25 anos de idade).
                 </Text>
                 <Text style={styles.titleText}>
                     Mulheres com risco maior que 20% ao longo da vida (“lifetime risk”) baseado em modelos que utilizam variáveis da história familiar (modelos de CLAUS, BOADICEA, BRCAPRO, Tyrer-Cuzik)
                 </Text>
                 <Text style={styles.text}>
-                    - Exame físico a cada 6-12 meses; - Se disponível geneticista, encaminhar para aconselhamento genético;{"\n"}{"\n"}- Mamografia anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 30 anos de idade);{"\n"}{"\n"}- Ressonância Magnética das Mamas anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 25 anos de idade).
+                    - Exame físico a cada 6-12 meses; - Se disponível geneticista, encaminhar para aconselhamento genético;{"\n"}- Mamografia anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 30 anos de idade);{"\n"}- Ressonância Magnética das Mamas anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 25 anos de idade).
                 </Text>
                 <Text style={styles.titleText}> 
                     Mulheres que receberam previamente irradiação em manto no tórax com menos de 30 anos de idade

@@ -17,17 +17,17 @@ export default ({navigation}) => {
                 </Text>
              </View>
             <View style={styles.imgContainer}>
-                <Image style={styles.img} source={require('../../../assets/D1.png')}/>
+                <Image style={styles.img} source={require('../../../assets/doenca.png')}/>
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"}O câncer de mama é uma doença causada pela multiplicação desordenada de células da mama. Esse processo gera células anormais que se multiplicam, formando um tumor.
+                    O câncer de mama é uma doença causada pela multiplicação desordenada de células da mama. Esse processo gera células anormais que se multiplicam, formando um tumor.
                 </Text>
                 <View style={styles.textContainer}>
                     <Text style={styles.titleText}>Como ele se manifesta?</Text>
                 </View>
                 <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"}Na maioria se manifesta com um nódulo na mama, mas também pode se apresentar de outras formas:
+                    Na maioria se manifesta com um nódulo na mama, mas também pode se apresentar de outras formas:
                 </Text>
             </View>
             <View style={styles.imgContainer}>
@@ -40,11 +40,11 @@ export default ({navigation}) => {
                 </Text>
             </View>
             <View style={styles.imgContainer}>
-                <Image style={styles.img} source={require('../../../assets/vermelhidao.png')}/>
+                <Image style={styles.img} source={require('../../../assets/abaulamentoDaMama.png')}/>
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"}Vermelhidão ou coceira na mama e/ou ao redor do mamilo. Quando o câncer ainda não conseguiu penetrar nos tecidos, se manifesta externamente dessa maneira.
+                    Vermelhidão ou coceira na mama e/ou ao redor do mamilo. Quando o câncer ainda não conseguiu penetrar nos tecidos, se manifesta externamente dessa maneira.
                 </Text>
             </View>
             <View style={styles.imgContainer}>
@@ -52,15 +52,14 @@ export default ({navigation}) => {
             </View>
             <View style={styles.textContainer}>
                 <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"} Descarga mamilar (eliminação de secreção), sem apertar. Nesses casos o tumor deve estar no início e alojado nos dutos mamários.
+                    Descarga mamilar (eliminação de secreção), sem apertar. Nesses casos o tumor deve estar no início e alojado nos dutos mamários.
                 </Text>
             </View>
             <View style={styles.imgContainer}>
-                <Image style={styles.img} source={require('../../../assets/nodulo.png')}/>
+                <Image style={styles.img} source={require('../../../assets/vermelhidao.png')}/>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"} 
+                <Text style={styles.text}> 
                     Nódulo na mama, que está sempre presente e não diminui de tamanho.
                 </Text>
             </View>
@@ -68,17 +67,15 @@ export default ({navigation}) => {
                 <Image style={styles.img} source={require('../../../assets/noduloAxila.png')}/>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"} 
+                <Text style={styles.text}> 
                     Edema na axila ou ao redor da clavícula. Isso demonstra que o câncer está avançando pelos gânglios linfáticos.
                 </Text>
             </View>
             <View style={styles.imgContainer}>
-                <Image style={styles.img} source={require('../../../assets/abaulamentoDaMama.png')}/>
+                <Image style={styles.img} source={require('../../../assets/nodulo.png')}/>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.lastText}>
-                    {"\t"}{"\t"}{"\t"}{"\t"} 
+                <Text style={styles.lastText}> 
                     Abaulamento da mama, endurecimento ou retração da pele (casca de laranja), devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"}  OBS.: A paciente pode sentir dor ou não junto a esse sinais e sintomas.
                 </Text>
                 <View style={styles.textContainer}>
@@ -87,7 +84,7 @@ export default ({navigation}) => {
                     </Text>
                 </View >
                 <Text style={styles.text}>
-                    {"\t"}{"\t"}{"\t"}{"\t"}O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
+                    O tipo histológico mais comum para o câncer de mama feminina é o carcinoma de células epiteliais, que se divide em lesões in situ e invasoras. Os carcinomas mais frequentes são os ductais ou lobulares.
                 </Text>
             </View>
             <View style={styles.lastImgContainer}>
@@ -131,12 +128,11 @@ const styles = StyleSheet.create({
     text:{
         marginTop:25,
         fontSize:20,
-        textAlign: "left",
+        textAlign: "center",
         letterSpacing: 0,
         opacity: 1,
         width: 300,
         lineHeight: 27,
-        color: "#707070"
     },
     lastText:{
         marginTop:25,

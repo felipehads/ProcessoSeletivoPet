@@ -13,7 +13,7 @@ export default ({navigation}) => {
             DADOS DEMOGRÁFICOS
         </Text>
         <Text style={styles.text}>
-            7- Qual era a idade da paciente na sua primeira gestação a termo?
+            7 - Qual era a idade da paciente na sua primeira gestação a termo?
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q8', {

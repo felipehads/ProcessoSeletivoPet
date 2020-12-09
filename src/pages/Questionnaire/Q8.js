@@ -14,7 +14,7 @@ export default ({navigation}) => {
             DADOS DEMOGRÁFICOS
         </Text>
         <Text style={styles.text}>
-            8- Quantas parentes de primeiro grau da paciente (mãe, irmãs, filhas) tiveram câncer de mama?
+            8 - Quantas parentes de primeiro grau da paciente (mãe, irmãs, filhas) tiveram câncer de mama?
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Results', {

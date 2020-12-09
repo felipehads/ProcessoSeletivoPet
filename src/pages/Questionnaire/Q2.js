@@ -13,7 +13,7 @@ export default ({navigation}) => {
             ELEGIBILIDADE DA PACIENTE
         </Text>
         <Text style={styles.text}>
-            2)- A paciente tem alguma
+            2 - A paciente tem alguma
             mutação nos genes BRCA1
             e/ou BRCA2, ou diagnóstico
             de alguma síndrome

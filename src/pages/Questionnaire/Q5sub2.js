@@ -14,7 +14,7 @@ export default ({navigation}) => {
             PACIENTE E HISTÓRICO FAMILIAR
         </Text>
         <Text style={styles.text}>
-            5.2) - A paciente teve pelo menos uma biópsia de mama com hiperplasia atípica?
+            5.2 - A paciente teve pelo menos uma biópsia de mama com hiperplasia atípica?
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q6', {

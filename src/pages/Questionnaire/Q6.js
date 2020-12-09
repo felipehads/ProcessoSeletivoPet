@@ -14,7 +14,7 @@ export default ({navigation}) => {
             PACIENTE E HISTÓRICO FAMILIAR
         </Text>
         <Text style={styles.text}>
-            6- Qual a idade da paciente no momento da menarca (primeira menstruação)?
+            6 - Qual a idade da paciente no momento da menarca (primeira menstruação)?
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q7', {

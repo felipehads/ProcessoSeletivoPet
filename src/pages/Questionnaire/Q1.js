@@ -13,7 +13,7 @@ export default ({navigation}) => {
             ELEGIBILIDADE DA PACIENTE
         </Text>
         <Text style={styles.text}>
-            1)- A paciente tem alguma
+            1 - A paciente tem alguma
             história médica de qualquer
             câncer de mama ou de
             carcinoma ductal in situ

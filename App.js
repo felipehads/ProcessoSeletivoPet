@@ -27,6 +27,7 @@ import Q6 from './src/pages/Questionnaire/Q6';
 import Q7 from './src/pages/Questionnaire/Q7';
 import Q8 from './src/pages/Questionnaire/Q8';
 import Results from './src/pages/Questionnaire/Results';
+import ResultsChart from './src/pages/Questionnaire/ResultsChart';
 
 
 const navigator = createStackNavigator({
@@ -138,6 +139,10 @@ const navigator = createStackNavigator({
     screen: Results,
     navigationOptions: ({navigation}) => ({})
   },
+  ResultsChart: {
+    screen: ResultsChart,
+    navigationOptions: ({navigation}) => ({})
+  }
 },
 {
   initialRouteName: 'FirstPage',

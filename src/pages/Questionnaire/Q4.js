@@ -13,7 +13,7 @@ export default ({navigation}) => {
             DADOS DEMOGRÁFICOS
         </Text>
         <Text style={styles.text}>
-            4)-Qual a etnia/raça da paciente?
+            4 - Qual a etnia/raça da paciente?
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('Q5', {

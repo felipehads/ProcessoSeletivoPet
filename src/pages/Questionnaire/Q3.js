@@ -13,7 +13,7 @@ export default ({navigation}) => {
             DADOS DEMOGRÁFICOS
         </Text>
         <Text style={styles.text}>
-            3)- Qual a idade da
+            3 - Qual a idade da
             paciente? OBS: Esta ferramenta
             não calcula risco de
             desenvolver câncer de

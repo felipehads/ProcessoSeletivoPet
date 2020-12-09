@@ -63,9 +63,14 @@ export default ({navigation}) => {
             </Text>
         </View>
         <View style={styles.buttonsContainer}>
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ResultsChart', {
+                risk: data.risk,
+                averageFiveRisk: data.averageFiveRisk,
+                lifetime_patient_risk: data.lifetime_patient_risk,
+                lifetime_average_risk: data.lifetime_average_risk
+            })}>
                 <Text style={styles.textButton}>
-                    Voltar ao Menu
+                    Gráficos
                 </Text>
             </TouchableOpacity>
         </View>

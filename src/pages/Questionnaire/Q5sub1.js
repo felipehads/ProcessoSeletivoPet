@@ -13,7 +13,7 @@ export default ({navigation}) => {
             PACIENTE E HISTÓRICO FAMILIAR
         </Text>
         <Text style={styles.text}>
-            5.1)-Quantas biópsias de 
+            5.1 - Quantas biópsias de 
             mama (positiva ou 
             negativa) tem a
             paciente?

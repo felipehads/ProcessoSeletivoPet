@@ -73,6 +73,13 @@ const FirstPage = ({navigation}) => {
                 </View>
                 
             </View>
+            <View>
+                <TouchableOpacity style={styles.buttonOther} onPress={() => navigation.navigate('Homepage')}>
+                    <Text style={styles.textButton}>
+                        Outra área
+                    </Text>
+                </TouchableOpacity>
+            </View>
         </View>
     )
 }
@@ -109,6 +116,17 @@ const styles = StyleSheet.create({
     buttonsEach:{
         flexDirection: "column",
         alignItems: "center",
+    },
+    buttonOther:{
+        backgroundColor: "#ee88b6",
+        marginTop: 10,
+        borderRadius: 5,
+        padding: 5,
+    },
+    textButton:{
+        fontSize: 10,
+        textAlign: "center",
+        color: "#ffffff"
     }
 })
 

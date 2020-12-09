@@ -7,13 +7,20 @@ export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
             <StatusBar hidden={true} />
-            <View style={styles.informationText}>
-                <Text style={styles.bigText}>
+            <View style={styles.textContainer}>
+                <Text style={styles.firstText}>
+                    BI-RADS
+                </Text>
+                <Text style={styles.titleText}>
                     Sistema de Laudos e
                     Registro de Dados de
                     Imagem da Mama
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.text}>
+                    O termo BI-RADS é um acrônimo em inglês para Breast Image Reporting and Data System, é uma forma padronizada de relatar os achados da mamografia, auxiliando na redução do risco de interpretações subjetivas de laudos.
+                    A classificação também ajuda a saber quando a investigação de um nódulo suspeito deve ser complementada com outros métodos e quando ela pode ser satisfatoriamente interrompida apenas com o resultado da mamografia. O BI-RADS também auxilia na padronização das condutas médicas frente aos resultados e ainda apresenta uma probabilidade de câncer de mama de acordo com as categorias.
+                </Text>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 0 
                 </Text>
                 <Text style={styles.text}>
@@ -22,7 +29,7 @@ export default ({navigation}) => {
                     mamografias anteriores para
                     comparação
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Conduta
                 </Text>
                 <Text style={styles.text}>
@@ -31,118 +38,124 @@ export default ({navigation}) => {
                     comparação com exames
                     anteriores.
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer
                 </Text>
                 <Text style={styles.text}>
                     Indeterminado.
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 1
+                </Text>
+                <Text style={styles.text}>
+                    Negativa
+                </Text>
+                <Text style={styles.subTitleText}>
+                    Conduta
                 </Text>
                 <Text style={styles.text}>
                     Rastreamento mamográfico de
                     rotina.
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer
                 </Text>
                 <Text style={styles.text}>
                     Essencialmente 0% de
                     probabilidade maligna.
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 2
                 </Text>
                 <Text style={styles.text}>
                     Achado(s) benigno(s)
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Conduta
                 </Text>
                 <Text style={styles.text}>
                     Rastreamento mamográfico de
                     rotina              
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer 
                 </Text>
                 <Text style={styles.text}>
                     Essencialmente 0% de probabilidade maligna.             
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 3
                 </Text>
                 <Text style={styles.text}>
                     Achado(s) provavelmente benigno(s)
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Conduta
                 </Text>
                 <Text style={styles.text}>
                     Seguimento de curto prazo (6 meses) ou acompanhamento mamográfico periódico.
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer 
                 </Text>
                 <Text style={styles.text}>
                     Entre 0% e 2% de probabilidade maligna.
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 4
                 </Text>
                 <Text style={styles.text}>
                     Achado(s) suspeito(s)
-                    {"\n"}1.    Baixa suspeita de malignidade
-                    {"\n"}2.    Moderada suspeita de malignidade
-                    {"\n"}3.    Alta suspeita de malignidade 
+                    {"\n"}1. Baixa suspeita de malignidade
+                    {"\n"}2. Moderada suspeita de malignidade
+                    {"\n"}3. Alta suspeita de malignidade 
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Conduta 
                 </Text>
                 <Text style={styles.text}>
                     Diagnóstico tecidual (Biópsia).
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer 
                 </Text>
                 <Text style={styles.text}>
                     Entre 2% e 95% de probabilidade maligna.
-                    {"\n"}1.    Entre 2% e 10% de probabilidade maligna;
-                    {"\n"}2.    Entre 10% e 50% de probabilidade maligna;
-                    {"\n"}3.    Entre 50% e 95% de probabilidade maligna;
+                    {"\n"}1. Entre 2% e 10% de probabilidade maligna;
+                    {"\n"}2. Entre 10% e 50% de probabilidade maligna;
+                    {"\n"}3. Entre 50% e 95% de probabilidade maligna;
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 5
                 </Text>
                 <Text style={styles.text}>
                     Achado altamente sugestivo de malignidade 
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Conduta 
                 </Text>
                 <Text style={styles.text}>
                     Diagnóstico tecidual (Biópsia).
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer 
                 </Text>
                 <Text style={styles.text}>
                     ≥95% de probabilidade maligna.
                 </Text>
-                <Text style={styles.bigText}>
+                <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 6
                 </Text>
                 <Text style={styles.text}>
                     Malignidade comprovada por biópsia 
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Conduta 
                 </Text>
                 <Text style={styles.text}>
                     Excisão cirúrgica quando clinicamente apropriado.
                 </Text>
-                <Text style={styles.pinkText}>
+                <Text style={styles.subTitleText}>
                     Probabilidade de câncer 
                 </Text>
                 <Text style={styles.text}>
@@ -158,25 +171,47 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor: "#ffffff"
     },
-    informationText:{
+    textContainer:{
         marginHorizontal:10,
-        marginBottom:25
-    },  
-    bigText:{
+        marginBottom:25,
+        alignItems: "center"
+    },
+    firstText:{
         fontSize:28,
-        fontWeight: "bold",
         textAlign: "center",
-        margin: 5
+        color: "#ee88b6",
+        marginTop: 30,
+        textAlign: "center",
+        width: 300,
+        opacity: 0.7,
+        lineHeight: 41
+    }, 
+    titleText:{
+        fontSize:20,
+        textAlign: "center",
+        color: "#ee88b6",
+        marginTop: 30,
+        marginBottom: 10,
+        textAlign: "center",
+        width: 300,
+        opacity: 0.7,
+        lineHeight: 41
+    },
+    subTitleText:{
+        fontSize:20,
+        textAlign: "center",
+        color: "#ee88b6",
+        marginVertical: 5,
+        textAlign: "center",
+        width: 300,
+        opacity: 0.7,
+        lineHeight: 41
     },
     text:{
         fontSize:20,
-        textAlign: "justify",
-        fontWeight: "600"
-    },
-    pinkText:{
-        color: "pink",
-        fontSize: 25,
-        textAlign: "left",
-        fontWeight: "bold"
+        textAlign: "center",
+        fontWeight: "600",
+        opacity: 0.7,
+        lineHeight: 41
     }
 })

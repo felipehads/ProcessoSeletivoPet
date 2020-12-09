@@ -13,7 +13,7 @@ export default ({navigation}) => {
             </View>
             <View style={styles.firstText}>
                 <Text style={styles.text}>
-                    Relaciona-se com o controle dos fatores de risco modificáveis e incentivo a adoção de comportamentos protetores, visto que estes aspectos podem ajudar a reduzir cerca de 30% o risco de desenvolver a doença.{"\n"}{"\n"}Para mulheres com alto risco de ter a doença pelos fatores genéticos e hereditários, existem também a mastectomia profilática com reconstrução mamária e a quimioprevenção.
+                    Relaciona-se com o controle dos fatores de risco modificáveis e incentivo a adoção de comportamentos protetores, visto que estes aspectos podem ajudar a reduzir cerca de 30% o risco de desenvolver a doença.{"\n"}Para mulheres com alto risco de ter a doença pelos fatores genéticos e hereditários, existem também a mastectomia profilática com reconstrução mamária e a quimioprevenção.
                 </Text>
             </View>
             <View style={styles.imgContainer}>
@@ -24,7 +24,7 @@ export default ({navigation}) => {
                     Fatores de risco modificáveis e comportamentos protetores
                 </Text>
                 <Text style={styles.text}>
-                    - Controlar o peso (IMC menor que 30kg/m²) principalmente na pós-menopausa;{"\n"}{"\n"}- Alimentar-se de forma balanceada e saudável (ingestão de frutas, legumes, azeite e alimentos risco em ômega 3);{"\n"}{"\n"}- Praticar atividade física (de preferência movimentar-se todos os dias);{"\n"}{"\n"}- Amamentar.
+                    - Controlar o peso (IMC menor que 30kg/m²) principalmente na pós-menopausa;{"\n"}- Alimentar-se de forma balanceada e saudável (ingestão de frutas, legumes, azeite e alimentos risco em ômega 3);{"\n"}- Praticar atividade física (de preferência movimentar-se todos os dias);{"\n"}- Amamentar.
                 </Text>
             </View>
             <View style={styles.imgContainerSquare}>
@@ -35,7 +35,7 @@ export default ({navigation}) => {
                     Mastectomia profilática com reconstrução mamária para mulheres com alto risco de desenvolver o câncer de mama
                 </Text>
                 <Text style={styles.text}>
-                    A redução absoluta do risco de câncer de mama varia de 2-7%, dependendo da idade de realização da cirurgia , geralmente até 40 anos.{"\n"}{"\n"}A decisão na indicação da cirurgia profilática bilateral deve ser discutida com a paciente levando-se em consideração todos os riscos e benefícios envolvidos. 
+                    A redução absoluta do risco de câncer de mama varia de 2-7%, dependendo da idade de realização da cirurgia , geralmente até 40 anos.{"\n"}A decisão na indicação da cirurgia profilática bilateral deve ser discutida com a paciente levando-se em consideração todos os riscos e benefícios envolvidos. 
                 </Text>
             </View>
             <View style={styles.imgContainerSquare}>
@@ -46,7 +46,7 @@ export default ({navigation}) => {
                     Quimioprevenção para mulheres com alto risco de desenvolver o câncer de mama
                 </Text>
                 <Text style={styles.text}>
-                    De acordo com o INCA, o SUS não utiliza medicamentos quimiopreventivos.{"\n"}{"\n"}De acordo com a SBM: Pacientes com risco de Gail ≥ 1.7, mais de 35 anos de idade, expectativa de vida superior a 10 anos ou com carcinoma lobular in situ devem usar um desses medicamentos por 5 anos:
+                    De acordo com o INCA, o SUS não utiliza medicamentos quimiopreventivos.{"\n"}De acordo com a SBM: Pacientes com risco de Gail ≥ 1.7, mais de 35 anos de idade, expectativa de vida superior a 10 anos ou com carcinoma lobular in situ devem usar um desses medicamentos por 5 anos:
                 </Text>
             </View>
             <View style={styles.imgContainer}>

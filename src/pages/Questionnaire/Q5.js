@@ -7,7 +7,7 @@ export default ({navigation}) => {
     <View style={styles.container}>
         <StatusBar hidden={true} />
         <Text style={styles.header}>
-            CALCULADORA DE RISCO(GAIL)
+            CALCULADORA DE RISCO (GAIL)
         </Text>
         <Text style={styles.bigText}>
             PACIENTE E HISTÓRICO FAMILIAR
@@ -25,7 +25,7 @@ export default ({navigation}) => {
                 value6: '1'
             }) }>
                 <Text style={styles.buttonText}>
-                    SIM
+                    Sim
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q6', {
@@ -37,7 +37,7 @@ export default ({navigation}) => {
                 value6: '0'
             })}>
                 <Text style={styles.buttonText}>
-                    NÃO
+                    Não
                 </Text>
             </TouchableOpacity>
         </View>
@@ -51,7 +51,7 @@ export default ({navigation}) => {
                 value6: '99'
             })}>
                 <Text style={styles.buttonText}>
-                    DESCONHECIDO
+                    Desconhecido
                 </Text>
             </TouchableOpacity>
         </View>

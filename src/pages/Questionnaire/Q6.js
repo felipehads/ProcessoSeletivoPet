@@ -8,7 +8,7 @@ export default ({navigation}) => {
     <View style={styles.container}>
         <StatusBar hidden={true} />
         <Text style={styles.header}>
-            CALCULADORA DE RISCO(GAIL)
+            CALCULADORA DE RISCO (GAIL)
         </Text>
         <Text style={styles.bigText}>
             PACIENTE E HISTÓRICO FAMILIAR

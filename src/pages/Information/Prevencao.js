@@ -13,8 +13,8 @@ export default ({navigation}) => {
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <NewButton textoPrincipal="PRIMÁRIA" navigation = {() => navigation.navigate("Primary")}/>
-                <NewButton textoPrincipal="SECUNDÁRIA" navigation = {() => navigation.navigate("Secondary")}/>
+                <NewButton textoPrincipal="Primária" navigation = {() => navigation.navigate("Primary")}/>
+                <NewButton textoPrincipal="Secundária" navigation = {() => navigation.navigate("Secondary")}/>
             </View>
     </View>
 

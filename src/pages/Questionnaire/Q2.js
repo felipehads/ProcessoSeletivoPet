@@ -7,7 +7,7 @@ export default ({navigation}) => {
     <View style={styles.container}>
         <StatusBar hidden={true} />
         <Text style={styles.header}>
-            CALCULADORA DE RISCO(GAIL)
+            CALCULADORA DE RISCO (GAIL)
         </Text>
         <Text style={styles.bigText}>
             ELEGIBILIDADE DA PACIENTE
@@ -25,7 +25,7 @@ export default ({navigation}) => {
             <TouchableOpacity style={styles.buttonsEach} onPress={() => Alert.alert("Atenção!",
             "Outras ferramentas podem ser mais apropriadas para cálculo de risco em pacientes portadoras de mutações genéticas ou outras síndromes relacionadas com o aumento de risco para desenvolver câncer de mama.")}>
                 <Text style={styles.buttonText}>
-                    SIM
+                    Sim
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q3', {
@@ -34,7 +34,7 @@ export default ({navigation}) => {
             }
             )}>
                 <Text style={styles.buttonText}>
-                    NÃO
+                    Não
                 </Text>
             </TouchableOpacity>
         </View>
@@ -44,7 +44,7 @@ export default ({navigation}) => {
                     value2: '2'
             })}>
                 <Text style={styles.buttonText}>
-                    DESCONHECIDO
+                    Desconhecido
                 </Text>
             </TouchableOpacity>
         </View>      

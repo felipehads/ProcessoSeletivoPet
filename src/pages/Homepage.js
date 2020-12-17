@@ -10,10 +10,10 @@ const Homepage = ({navigation}) => {
                 <Text style={styles.text}>Muito bem! Agora selecione a opção desejada para começarmos</Text>
             </View>
             <View style={styles.button}>
-                <NewButton textoPrincipal="Calculadora de risco(Gail)" navigation = {() => navigation.navigate("Calculator")}/>
+                <NewButton textoPrincipal="Calculadora de risco (Gail)" navigation = {() => navigation.navigate("Calculator")}/>
             </View>
             <View style={styles.button}>
-                <NewButton textoPrincipal="Acesso a informação" navigation = {() => navigation.navigate("Information")}/> 
+                <NewButton textoPrincipal="Acesso à informação" navigation = {() => navigation.navigate("Information")}/> 
             </View>
             <View style={styles.button}>
                 <NewButton textoPrincipal="Sobre o aplicativo" navigation = {() => navigation.navigate("Sobre")}/>

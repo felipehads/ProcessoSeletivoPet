@@ -9,7 +9,7 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View>
                 <Text style={styles.header}>
-                    CALCULADORA DE RISCO(GAIL)
+                    CALCULADORA DE RISCO (GAIL)
                 </Text>
             </View>
             <View>

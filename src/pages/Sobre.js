@@ -21,7 +21,7 @@ export default ({navigation}) => {
                 <Text style={styles.titleText}>Sobre Nós </Text>
                 <Text style={styles.text}>    
                     Este aplicativo é produto de uma dissertação de mestrado do Programa de Pós-Graduação em Saúde e Tecnologia (PPGST) da Universidade Federal do Maranhão (UFMA) campus avançado Imperatriz, tendo como pesquisadoras responsáveis a professora doutora Adriana Gomes Nogueira Ferreira e a mestranda Rafaela Cristina Araújo Gomes. 
-                    {"\n\n"}A pesquisa faz parte de um projeto financiado pela Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão (FAPEMA), intitulado “PREVENÇÃO SECUNDÁRIA DO CÂNCER DE MAMA: USO DE APLICATIVO MÓVEL PARA CAPACITAÇÃO DE ENFERMEIROS”.
+                    {"\n\n"}A pesquisa faz parte de um projeto financiado pela Fundação de Amparo à Pesquisa e ao Desenvolvimento Científico e Tecnológico do Maranhão (FAPEMA), intitulado “PREVENÇÃO SECUNDÁRIA DO CÂNCER DE MAMA: USO DE APLICATIVO MÓVEL PARA CAPACITAÇÃO PROFISSIONAL”.
                 </Text> 
                 <Text style={styles.titleText}>Referências</Text>
                 <Text style={styles.text}>

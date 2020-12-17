@@ -7,7 +7,7 @@ export default ({navigation}) => {
     <View style={styles.container}>
         <StatusBar hidden={true} />
         <Text style={styles.header}>
-            CALCULADORA DE RISCO(GAIL)
+            CALCULADORA DE RISCO (GAIL)
         </Text>
         <Text style={styles.bigText}>
             ELEGIBILIDADE DA PACIENTE
@@ -28,14 +28,14 @@ export default ({navigation}) => {
             <TouchableOpacity style={styles.buttonsEach} onPress={() => Alert.alert("Atenção!",
             "Este modelo de cálculo de risco não calcula com precisão risco para pacientes com história pregressa de câncer de mama ou de CDIS ou CLIS.Procure seu médico.")}>
                 <Text style={styles.buttonText}>
-                    SIM
+                    Sim
                 </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q2', {
                 value1 : '1'
             })}>
                 <Text style={styles.buttonText}>
-                    NÃO
+                    Não
                 </Text>
             </TouchableOpacity>
             </View>   

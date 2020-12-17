@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, StyleSheet, TouchableOpacity, StatusBar} from 'react-native';
+import {View, Image, Text, StyleSheet, TouchableOpacity, StatusBar, Dimensions} from 'react-native';
 
 
 const FirstPage = ({navigation}) => {
@@ -100,16 +100,16 @@ const styles = StyleSheet.create({
     headerText:{
         textAlign:"center",
         fontSize:16,
-        color: "#808080",
         marginHorizontal: 50,
+        fontWeight:"600",
         marginVertical: 20
     },
     buttonsContainer:{
         flexDirection: "row"
     },
     buttonsImg:{
-        width: 125,
-        height: 90,
+        width: Dimensions.get("window").width * 0.3,
+        height: Dimensions.get("window").height * 0.1,
         
         marginHorizontal: 15
     },

@@ -18,9 +18,9 @@ export default ({navigation}) => {
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <NewButton textoPrincipal="RASTREAMENTO PARA POPULAÇÃO GERAL" navigation = {() => navigation.navigate("TrackingGeneralPopulation")}/>
-                <NewButton textoPrincipal="RASTREAMENTO PARA POPULAÇÃO DE ALTO RISCO" navigation = {() => navigation.navigate("TrackingHighRisk")}/>
-                <NewButton textoPrincipal="DIAGNÓSTICO PRECOCE" navigation = {() => navigation.navigate("Diagnostic")}/>
+                <NewButton textoPrincipal="Rastreamento para população geral" navigation = {() => navigation.navigate("TrackingGeneralPopulation")}/>
+                <NewButton textoPrincipal="Rastreamento para poupulação de alto risco" navigation = {() => navigation.navigate("TrackingHighRisk")}/>
+                <NewButton textoPrincipal="Diagnóstico precoce" navigation = {() => navigation.navigate("Diagnostic")}/>
             </View>
         </ScrollView>
     )

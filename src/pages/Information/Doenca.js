@@ -75,8 +75,8 @@ export default ({navigation}) => {
                 <Image style={styles.img} source={require('../../../assets/nodulo.png')}/>
             </View>
             <View style={styles.textContainer}>
-                <Text style={styles.lastText}> 
-                    Abaulamento da mama, endurecimento ou retração da pele (casca de laranja), devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.{"\n"}{"\n"}{"\t"}{"\t"}{"\t"}{"\t"}  OBS.: A paciente pode sentir dor ou não junto a esse sinais e sintomas.
+                <Text style={styles.text}> 
+                    Abaulamento da mama, endurecimento ou retração da pele (casca de laranja), devido a degeneração das glândulas mamárias. Também são indicativos de um processo inflamatório nos vasos que irrigam a região.{"\n"}{"\n"}OBS.: A paciente pode sentir dor ou não junto a esse sinais e sintomas.
                 </Text>
                 <View style={styles.textContainer}>
                     <Text style={styles.titleText}>
@@ -134,17 +134,6 @@ const styles = StyleSheet.create({
         opacity: 0.7,
         width: 300,
         lineHeight: 27,
-    },
-    lastText:{
-        marginTop:25,
-        fontSize:20,
-        textAlign: "left",
-        fontWeight: "600",
-        letterSpacing: 0,
-        opacity: 0.7,
-        width: 300,
-        lineHeight: 27,
-        marginBottom:30
     },
     img:{
         width:206,

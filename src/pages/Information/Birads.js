@@ -106,9 +106,9 @@ export default ({navigation}) => {
                 </Text>
                 <Text style={styles.text}>
                     Achado(s) suspeito(s)
-                    {"\n"}1. Baixa suspeita de malignidade
-                    {"\n"}2. Moderada suspeita de malignidade
-                    {"\n"}3. Alta suspeita de malignidade 
+                    {"\n"}a) Baixa suspeita de malignidade
+                    {"\n"}b) Moderada suspeita de malignidade
+                    {"\n"}c) Alta suspeita de malignidade 
                 </Text>
                 <Text style={styles.subTitleText}>
                     Conduta 
@@ -121,9 +121,9 @@ export default ({navigation}) => {
                 </Text>
                 <Text style={styles.text}>
                     Entre 2% e 95% de probabilidade maligna.
-                    {"\n"}1. Entre 2% e 10% de probabilidade maligna;
-                    {"\n"}2. Entre 10% e 50% de probabilidade maligna;
-                    {"\n"}3. Entre 50% e 95% de probabilidade maligna;
+                    {"\n"}a) Entre 2% e 10% de probabilidade maligna;
+                    {"\n"}b) Entre 10% e 50% de probabilidade maligna;
+                    {"\n"}c) Entre 50% e 95% de probabilidade maligna;
                 </Text>
                 <Text style={styles.titleText}>
                     {"\n"}CATEGORIA 5

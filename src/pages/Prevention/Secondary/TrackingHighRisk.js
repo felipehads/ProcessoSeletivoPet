@@ -38,7 +38,7 @@ export default ({navigation}) => {
                     Mulheres com risco maior que 20% ao longo da vida (“lifetime risk”) baseado em modelos que utilizam variáveis da história familiar (modelos de CLAUS, BOADICEA, BRCAPRO, Tyrer-Cuzik)
                 </Text>
                 <Text style={styles.text}>
-                    - Exame físico a cada 6-12 meses; - Se disponível geneticista, encaminhar para aconselhamento genético;{"\n"}- Mamografia anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 30 anos de idade);{"\n"}- Ressonância Magnética das Mamas anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 25 anos de idade).
+                    - Exame físico a cada 6-12 meses; - Se disponível geneticista, encaminhar para aconselhamento genético;{"\n"}{"\n"}- Mamografia anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 30 anos de idade);{"\n"}{"\n"}- Ressonância Magnética das Mamas anual, iniciar 10 anos antes da idade da paciente mais jovem que teve câncer na família (não antes dos 25 anos de idade).
                 </Text>
                 <Text style={styles.titleText}> 
                     Mulheres que receberam previamente irradiação em manto no tórax com menos de 30 anos de idade
@@ -50,7 +50,7 @@ export default ({navigation}) => {
                     Pacientes com mutação conhecida que aumentam risco de câncer de mama ou com história familiar sugestiva
                 </Text>
                 <Text style={styles.text}>
-                    - Se disponível geneticista, encaminhar para aconselhamento genético; - Ressonância Magnética das Mamas iniciar aos 25 anos de idade, anualmente; - Mamografia anual a partir dos 30 anos de idade.
+                    - Se disponível geneticista, encaminhar para aconselhamento genético;{"\n"}{"\n"}- Ressonância Magnética das Mamas iniciar aos 25 anos de idade, anualmente;{"\n"}{"\n"}- Mamografia anual a partir dos 30 anos de idade.
                 </Text>
             </View>
         </ScrollView>

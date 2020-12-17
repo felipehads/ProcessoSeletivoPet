@@ -181,7 +181,8 @@ export default ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        backgroundColor: "#ffffff"
+        backgroundColor: "#ffffff",
+        marginBottom: 20
     },
     header: {
         fontSize:34,

@@ -189,8 +189,9 @@ const styles = StyleSheet.create({
         height:383,
     },
     img4:{
-        width:335,
-        height:320,
+        marginVertical:10,
+        width:315,
+        height:315,
     },
     img5:{
         width:335,

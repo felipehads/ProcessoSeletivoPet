@@ -26,8 +26,10 @@ export default ({navigation}) => {
                 <Text style={styles.titleText}>Referências</Text>
                 <Text style={styles.text}>
                     AMERICAN COLLEGE OF RADIOLOGY (ACR). Atlas BI-RADS do ACR: sistema de laudos e registro de dados de imagem da mama - 2 ed. São Paulo: Colégio Brasileiro de Radiologia, 2016. ISBN 978-85-786-8249-1. 
-                    {"\n\n"}NATIONAL CANCER INSTITUTE. Breast Cancer Risk Assessment Tool. Disponível em : https://bcrisktool.cancer.gov/calculator.html 
-                    {"\n\n"}INSTITUTO NACIONAL DO CÂNCER JOSÉ ALENCAR GOMES DA SILVA (INCA). Diretrizes para a detecção precoce do câncer de mama no Brasil – Rio de Janeiro, 2015. ISBN 978-85-7318-274-3. 
+                    {"\n\n"}INSTITUTO NACIONAL DO CÂNCER JOSÉ ALENCAR GOMES DA SILVA (INCA). Diretrizes para a detecção precoce do câncer de mama no Brasil – Rio de Janeiro, 2015. ISBN 978-85-7318-274-3.
+                    {"\n\n"}MOREIRA, C. B.; DAHINTEN, V. S.; HOWARD, A. F.; FERNANDES, A. F. C. The Revised Champion’s Health Belief Model Scale: Predictive Validity Among Brazilian Women. SAGE Open Nursing, v. 6, p. 1-11, 2020. DOI: 10.1177/2377960820940551
+                    {"\n\n"}NATIONAL CANCER INSTITUTE. Breast Cancer Risk Assessment Tool. Disponível em : https://bcrisktool.cancer.gov/calculator.html
+                    {"\n\n"}PAIVA, J. L. F. Risco de Câncer de Mama na população brasileira. 2019. 56f. Dissertação (Mestrado Profissional em Ciências Aplicadas à Saúde) – Universidade do Vale do Sapucaí, Pouso Alegre, 2019. Disponível em: http://www.univas.edu.br/mpcas/docs/dissertacoes/89.pdf
                     {"\n\n"}SOCIEDADE BRASILEIRA DE MASTOLOGIA (SBM). Câncer de Mama: Consenso da Sociedade Brasileira de Mastologia – Regional Piauí. 2017.
                 </Text>
             </View>

@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
         top: 94,
         fontSize: 34,
         width: 280,
+        fontWeight: "bold",
         height: 87,
         textAlign: "center",
         letterSpacing: -0.82,

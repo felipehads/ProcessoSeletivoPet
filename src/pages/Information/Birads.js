@@ -177,34 +177,35 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     firstText:{
-        fontSize:28,
+        fontWeight: "bold",
+        fontSize:34,
         textAlign: "center",
         color: "#ee88b6",
         marginTop: 30,
         textAlign: "center",
         width: 300,
-        opacity: 0.7,
+        opacity: 1,
         lineHeight: 41
     }, 
     titleText:{
-        fontSize:20,
+        fontWeight: "bold",
+        fontSize:24,
         textAlign: "center",
         color: "#ee88b6",
         marginTop: 30,
         marginBottom: 10,
         textAlign: "center",
         width: 300,
-        opacity: 0.7,
         lineHeight: 41
     },
     subTitleText:{
+        fontWeight: "bold",
         fontSize:20,
         textAlign: "center",
         color: "#ee88b6",
         marginVertical: 5,
         textAlign: "center",
         width: 300,
-        opacity: 0.7,
         lineHeight: 41
     },
     text:{

@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
         marginBottom: 40,
     },
     headerText:{
+        fontWeight: "bold",
         textAlign: "center",
         fontSize: 34,
         lineHeight: 41,

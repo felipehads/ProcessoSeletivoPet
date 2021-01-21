@@ -139,10 +139,10 @@ const styles = StyleSheet.create({
     },
     headerText:{
         textAlign: "center",
+        fontWeight: "bold",
         fontSize: 34,
         letterSpacing: -0.82,
         lineHeight: 41,
-        fontWeight: "600",
         color: "#ee88b6"
     },
     textContainer:{
@@ -150,10 +150,10 @@ const styles = StyleSheet.create({
         marginTop: 20
     },
     titleText:{
-        fontSize:18,
+        fontWeight: "bold",
+        fontSize:24,
         textAlign: "center",
         letterSpacing: -0.43,
-        opacity: 0.7,
         width: 300,
         lineHeight: 41,
         color: "#ee88b6",

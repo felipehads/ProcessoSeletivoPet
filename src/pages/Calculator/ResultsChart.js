@@ -99,9 +99,12 @@ export default ({navigation}) => {
     return(
         <ScrollView style={styles.container}>
             <StatusBar hidden={true}/>
-            <Text style={styles.header}>
-                CALCULADORA DE RISCO (GAIL)
-            </Text>
+            <View style={{marginHorizontal:30}}>
+                <Text style={styles.header}>
+                    FERRAMENTA DE AVALIAÇÃO DE RISCO DE CÂNCER DE MAMA
+                </Text>
+            </View>
+            
             <Text style={styles.bigText}>
                 GRÁFICOS
             </Text>
@@ -170,7 +173,7 @@ export default ({navigation}) => {
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
                     <Text style={styles.textButton}>
-                        Voltar ao Menu
+                        Voltar às ferramentas
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -192,7 +195,7 @@ const styles = StyleSheet.create({
         color: "#ee88b6"
     },
     bigText:{
-        fontSize:28,
+        fontSize:24,
         fontWeight: "bold",
         textAlign: "center",
         color: "#ee88b6",

@@ -49,17 +49,18 @@ const styles = StyleSheet.create({
     headerText:{
         textAlign: "center",
         fontSize: 34,
-        color: "#ee88b6"
+        color: "#ee88b6",
+        fontWeight: "bold"
     },
     textContainer:{
         alignItems: "center",
         marginVertical:40
     },
     titleText:{
-        fontSize:18,
+        fontSize:24,
+        fontWeight: "bold",
         marginHorizontal:10,
         textAlign: "center",
-        opacity: 0.7,
         width: 298,
         lineHeight: 41,
         color: "#ee88b6",

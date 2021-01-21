@@ -7,9 +7,9 @@ export default ({navigation}) => {
     return(
         <View style={styles.container}>
             <StatusBar hidden={true} />
-            <View>
+            <View style={{marginHorizontal:30}}>
                 <Text style={styles.header}>
-                    CALCULADORA DE RISCO (GAIL)
+                    FERRAMENTA DE AVALIAÇÃO DE RISCO DE CÂNCER DE MAMA
                 </Text>
             </View>
             <View>
@@ -20,7 +20,7 @@ export default ({navigation}) => {
             <View style={styles.buttonsContainer}>
                 <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Q1')}>
                     <Text style={styles.textButton}>
-                        Usar a calculadora
+                        Usar ferramenta
                     </Text>
                 </TouchableOpacity>
             </View>
@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
     },
     header: {
         fontSize:34,
-        marginTop: 40,
         fontWeight: "bold",
+        marginTop: 40,
         textAlign: "center",
         color: "#ee88b6"
     },
@@ -44,7 +44,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlign:"center",
         margin: 20,
-        fontWeight:"600"
+        fontWeight:"600",
+        marginHorizontal:20
     },
     buttonsContainer:{
         flexDirection:"column",

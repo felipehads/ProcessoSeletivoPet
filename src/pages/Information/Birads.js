@@ -183,7 +183,6 @@ const styles = StyleSheet.create({
         marginTop: 30,
         textAlign: "center",
         width: 300,
-        opacity: 0.7,
         lineHeight: 41
     }, 
     titleText:{
@@ -210,7 +209,6 @@ const styles = StyleSheet.create({
     text:{
         fontSize:20,
         textAlign: "center",
-        fontWeight: "600",
         opacity: 0.7,
         lineHeight: 41
     }

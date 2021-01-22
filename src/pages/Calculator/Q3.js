@@ -110,7 +110,6 @@ const styles = StyleSheet.create({
     text:{
         fontSize:18,
         textAlign: "center",
-        fontWeight: "600",
         marginHorizontal: 20,
         marginBottom: 40
     },

@@ -29,8 +29,6 @@ const styles = StyleSheet.create({
     headerText: {
         top: 94,
         fontSize: 34,
-        width: 280,
-        height: 87,
         textAlign: "center",
         letterSpacing: -0.82,
         color: "#ee88b6",

@@ -101,7 +101,6 @@ const styles = StyleSheet.create({
         textAlign:"center",
         fontSize:16,
         marginHorizontal: 50,
-        fontWeight:"600",
         marginVertical: 20
     },
     buttonsContainer:{

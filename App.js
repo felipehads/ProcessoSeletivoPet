@@ -14,20 +14,20 @@ import TrackingHighRisk from './src/pages/Prevention/Secondary/TrackingHighRisk'
 import TrackingGeneralPopulation from './src/pages/Prevention/Secondary/TrackingGeneralPopulation';
 import FirstPage from './src/pages/FirstPage';
 import Calculator from './src/pages/Calculator';
-import Q1 from './src/pages/Questionnaire/Q1';
-import Q2 from './src/pages/Questionnaire/Q2';
-import Q3 from './src/pages/Questionnaire/Q3';
-import Q4 from './src/pages/Questionnaire/Q4';
-import Q4sub1 from './src/pages/Questionnaire/Q4sub1';
-import Q4sub2 from './src/pages/Questionnaire/Q4sub2';
-import Q5 from './src/pages/Questionnaire/Q5';
-import Q5sub1 from './src/pages/Questionnaire/Q5sub1';
-import Q5sub2 from './src/pages/Questionnaire/Q5sub2';
-import Q6 from './src/pages/Questionnaire/Q6';
-import Q7 from './src/pages/Questionnaire/Q7';
-import Q8 from './src/pages/Questionnaire/Q8';
-import Results from './src/pages/Questionnaire/Results';
-import ResultsChart from './src/pages/Questionnaire/ResultsChart';
+import Q1 from './src/pages/Calculator/Q1';
+import Q2 from './src/pages/Calculator/Q2';
+import Q3 from './src/pages/Calculator/Q3';
+import Q4 from './src/pages/Calculator/Q4';
+import Q4sub1 from './src/pages/Calculator/Q4sub1';
+import Q4sub2 from './src/pages/Calculator/Q4sub2';
+import Q5 from './src/pages/Calculator/Q5';
+import Q5sub1 from './src/pages/Calculator/Q5sub1';
+import Q5sub2 from './src/pages/Calculator/Q5sub2';
+import Q6 from './src/pages/Calculator/Q6';
+import Q7 from './src/pages/Calculator/Q7';
+import Q8 from './src/pages/Calculator/Q8';
+import Results from './src/pages/Calculator/Results';
+import ResultsChart from './src/pages/Calculator/ResultsChart';
 
 
 const navigator = createStackNavigator({

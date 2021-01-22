@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {View, Text, StyleSheet, StatusBar} from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 import axios from 'axios';
 
 export default ({navigation}) => {
@@ -36,7 +36,7 @@ export default ({navigation}) => {
     }, []);
 
     return(
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
         <StatusBar hidden={true} />
         <Text style={styles.header}>
             CALCULADORA DE RISCO (GAIL)
@@ -74,14 +74,13 @@ export default ({navigation}) => {
                 </Text>
             </TouchableOpacity>
         </View>
-    </View>
+    </ScrollView>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        justifyContent:"center",
         backgroundColor: "#ffffff"
     },
     header: {
@@ -101,14 +100,12 @@ const styles = StyleSheet.create({
     text:{
         fontSize:24,
         textAlign: "justify",
-        fontWeight: "600",
         marginHorizontal: 10
     },
     Boldtext:{
         fontSize:24,
         marginHorizontal:10,
         textAlign: "justify",
-        fontWeight: "600",
         fontWeight: "bold"
     },
     textContainer:{

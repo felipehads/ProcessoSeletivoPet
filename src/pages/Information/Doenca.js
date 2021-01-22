@@ -129,7 +129,6 @@ const styles = StyleSheet.create({
         marginTop:25,
         fontSize:20,
         textAlign: "center",
-        fontWeight: "600",
         letterSpacing: 0,
         opacity: 0.7,
         width: 300,

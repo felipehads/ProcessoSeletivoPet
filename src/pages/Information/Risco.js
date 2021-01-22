@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
         marginBottom:30
     },
     headerText:{
+        fontWeight: "bold",
         textAlign: "center",
         fontSize: 34,
         color: "#ee88b6"
@@ -74,11 +75,11 @@ const styles = StyleSheet.create({
         lineHeight: 41
     },
     titleText:{
-        fontSize:18,
+        fontWeight: "bold",
+        fontSize:24,
         marginHorizontal:10,
         textAlign: "left",
         letterSpacing: -0.43,
-        opacity: 0.7,
         width: 298,
         lineHeight: 41,
         color: "#ee88b6"

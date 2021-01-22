@@ -6,9 +6,12 @@ export default ({navigation}) => {
     return (
     <View style={styles.container}>
         <StatusBar hidden={true} />
-        <Text style={styles.header}>
-            CALCULADORA DE RISCO (GAIL)
-        </Text>
+        <View style={{marginHorizontal:30}}>
+            <Text style={styles.header}>
+                FERRAMENTA DE AVALIAÇÃO DE RISCO DE CÂNCER DE MAMA
+            </Text>
+        </View>
+        
         <Text style={styles.bigText}>
             DADOS DEMOGRÁFICOS
         </Text>
@@ -102,6 +105,7 @@ const styles = StyleSheet.create({
     },
     bigText:{
         fontSize:22,
+        fontWeight: "bold",
         marginBottom: 40,
         textAlign: "center",
         color: "#ee88b6",

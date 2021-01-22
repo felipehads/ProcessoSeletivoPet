@@ -67,6 +67,7 @@ const styles = StyleSheet.create({
         marginTop: 40,
     },
     headerText:{
+        fontWeight: "bold",
         textAlign:"center",
         fontSize: 34,
         letterSpacing: -0.82,
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
         color: "#ee88b6"
     },
     firstText:{
-        marginTop: 30,
+        marginTop: 34,
         alignItems: "center",
         marginHorizontal: 38
     },
@@ -91,10 +92,10 @@ const styles = StyleSheet.create({
         lineHeight: 41
     },
     titleText:{
-        fontSize:18,
+        fontWeight: "bold",
+        fontSize:24,
         textAlign: "center",
         letterSpacing: -0.43,
-        opacity: 0.7,
         width: 298,
         lineHeight: 41,
         color: "#ee88b6",

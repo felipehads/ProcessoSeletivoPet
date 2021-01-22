@@ -38,9 +38,12 @@ export default ({navigation}) => {
     return(
     <ScrollView style={styles.container}>
         <StatusBar hidden={true} />
-        <Text style={styles.header}>
-            CALCULADORA DE RISCO (GAIL)
-        </Text>
+        <View style={{marginHorizontal:30}}>
+            <Text style={styles.header}>
+                FERRAMENTA DE AVALIAÇÃO DE RISCO DE CÂNCER DE MAMA
+            </Text>
+        </View>
+        
         <Text style={styles.bigText}>
             RESULTADO
         </Text>
@@ -90,7 +93,7 @@ const styles = StyleSheet.create({
         color: "#ee88b6"
     },
     bigText:{
-        fontSize:28,
+        fontSize:24,
         fontWeight: "bold",
         marginBottom: 10,
         textAlign: "center",
@@ -106,7 +109,11 @@ const styles = StyleSheet.create({
         fontSize:24,
         marginHorizontal:10,
         textAlign: "justify",
+<<<<<<< HEAD
         fontWeight: "bold"
+=======
+        fontWeight: "bold",
+>>>>>>> 80e0790f3c8991f195df542fb2864b68ee0196e8
     },
     textContainer:{
         marginVertical: 10,

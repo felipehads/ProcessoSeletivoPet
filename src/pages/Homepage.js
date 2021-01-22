@@ -17,7 +17,7 @@ const Homepage = ({navigation}) => {
                 transparent={true}
                 visible = {visible}
                 >
-                    <View style={{flex:0.4,backgroundColor: 'pink', alignItems: 'center', justifyContent: 'center', marginHorizontal: 30, marginTop: 10,borderRadius: 20, padding: 20}}>
+                    <View style={{flex:0.4,backgroundColor: 'pink', alignItems: 'center', justifyContent: 'center', marginHorizontal: 30, marginTop: 10,borderRadius: 20, paddingHorizontal: 40, paddingVertical: 70}}>
                         <Text style={{textAlign: 'center', marginVertical: 10, fontSize: 16}}>Atenção!{"\n"}{"\n"}
                         Você profissional de saúde também precisa se cuidar!{"\n"}{"\n"}
                         Fique atento as recomendações quanto a presença de sinais e sintomas, fatores de risco e periodicidade dos exames para rastreamento e detecção precoce do câncer de mama.{"\n"}{"\n"}
@@ -58,9 +58,10 @@ const styles = StyleSheet.create({
     },
     text:{
         textAlign:"center",
-        fontSize:20,
+        fontSize:24,
         color: "#ee88b6",
-        marginHorizontal: 50,
+        fontWeight: "bold",
+        marginHorizontal: 30,
         marginBottom: 50,
     },
     button:{

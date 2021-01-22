@@ -109,6 +109,7 @@ const styles = StyleSheet.create({
     },
     headerText:{
         textAlign: "center",
+        fontWeight: "bold",
         fontSize: 34,
         color: "#ee88b6"
     },
@@ -117,8 +118,9 @@ const styles = StyleSheet.create({
         marginTop: 15
     },
     titleText:{
-        fontSize:20,
-        textAlign: "left",
+        fontWeight: "bold",
+        fontSize:24,
+        textAlign: "center",
         letterSpacing: 0,
         opacity: 1,
         width: 300,

@@ -109,11 +109,7 @@ const styles = StyleSheet.create({
         fontSize:24,
         marginHorizontal:10,
         textAlign: "justify",
-<<<<<<< HEAD
         fontWeight: "bold"
-=======
-        fontWeight: "bold",
->>>>>>> 80e0790f3c8991f195df542fb2864b68ee0196e8
     },
     textContainer:{
         marginVertical: 10,

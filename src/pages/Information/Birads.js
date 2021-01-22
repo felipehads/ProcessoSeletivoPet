@@ -184,10 +184,6 @@ const styles = StyleSheet.create({
         marginTop: 30,
         textAlign: "center",
         width: 300,
-<<<<<<< HEAD
-=======
-        opacity: 1,
->>>>>>> 80e0790f3c8991f195df542fb2864b68ee0196e8
         lineHeight: 41
     }, 
     titleText:{

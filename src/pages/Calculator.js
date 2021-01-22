@@ -44,11 +44,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlign:"center",
         margin: 20,
-<<<<<<< HEAD
-=======
-        fontWeight:"600",
-        marginHorizontal:20
->>>>>>> 80e0790f3c8991f195df542fb2864b68ee0196e8
     },
     buttonsContainer:{
         flexDirection:"column",

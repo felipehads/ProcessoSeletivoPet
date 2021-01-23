@@ -30,7 +30,7 @@ export default ({navigation}) => {
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Calculator')}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
                     <Text style={styles.textButton}>
                         Escala de adesão a mamografia (RCHBMS)
                     </Text>

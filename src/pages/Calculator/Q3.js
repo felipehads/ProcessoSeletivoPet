@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, StatusBar } from "react-native";
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import RNPickerSelect from 'react-native-picker-select';
 
 export default ({navigation}) => {
+    var age;
     return (
     <View style={styles.container}>
         <StatusBar hidden={true} />
@@ -26,11 +28,7 @@ export default ({navigation}) => {
         </Text>
         
         <RNPickerSelect
-            onValueChange={(value) => navigation.navigate('Q4', {
-                value1: navigation.getParam('value1', ''),
-                value2: navigation.getParam('value2', ''),
-                value3: value
-            })}
+            onValueChange={(value) => age = value}
             items={[
                 { label: '35 anos', value: '35' },
                 { label: '36 anos', value: '36' },
@@ -86,7 +84,19 @@ export default ({navigation}) => {
                 { label: '85 anos', value: '85' },
 
             ]}
+            style={pickerSelectStyles}
         />
+        <View style={styles.buttonsContainer}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Q4', {
+                    value1: navigation.getParam('value1', ''),
+                    value2: navigation.getParam('value1', ''),
+                    value3: age
+            })}>
+                    <Text style={styles.textButton}>
+                        Avançar
+                    </Text>
+                </TouchableOpacity>
+            </View>
     </View>
   );
 }
@@ -117,4 +127,42 @@ const styles = StyleSheet.create({
         marginHorizontal: 20,
         marginBottom: 40
     },
+    buttonsContainer:{
+        flexDirection:"column",
+        justifyContent:"flex-end",
+        alignItems:"center"
+    },
+    button: {
+        backgroundColor: "#ee88b6",
+        width: 300,
+        marginTop: 40,
+        borderRadius: 5,
+        padding: 20,
+    },
+    textButton: {
+        fontSize: 14,
+        textAlign: "center",
+        color: "#ffffff"
+    }
 });
+
+const pickerSelectStyles = StyleSheet.create({
+    inputIOS: {
+      fontSize: 16,
+      paddingVertical: 12,
+      paddingHorizontal: 10,
+      borderWidth: 1,
+      borderColor: 'gray',
+      borderRadius: 4,
+      color: 'black',
+    },
+    inputAndroid: {
+      fontSize: 16,
+      paddingHorizontal: 10,
+      paddingVertical: 8,
+      borderWidth: 0.5,
+      borderColor: 'purple',
+      borderRadius: 8,
+      color: 'black',
+    },
+  });

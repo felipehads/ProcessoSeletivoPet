@@ -13,6 +13,7 @@ import Diagnostic from './src/pages/Prevention/Secondary/Diagnostic';
 import TrackingHighRisk from './src/pages/Prevention/Secondary/TrackingHighRisk';
 import TrackingGeneralPopulation from './src/pages/Prevention/Secondary/TrackingGeneralPopulation';
 import FirstPage from './src/pages/FirstPage';
+import Avaliation from './src/pages/Avaliation';
 import Calculator from './src/pages/Calculator';
 import Q1 from './src/pages/Calculator/Q1';
 import Q2 from './src/pages/Calculator/Q2';
@@ -85,6 +86,10 @@ const navigator = createStackNavigator({
   },
   Calculator:{
     screen: Calculator,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Avaliation:{
+    screen: Avaliation,
     navigationOptions: ({navigation}) => ({})
   },
   Q1: {

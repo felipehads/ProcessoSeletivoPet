@@ -54,11 +54,9 @@ export default ({navigation}) => {
                 value3: navigation.getParam('value3', ''),
                 value4: 'Hispanic'
             })}>
-                <View style={styles.brButton}>
-                    <Text style={styles.buttonText}>
-                        Hispânica/Latina
-                    </Text>
-                </View>
+                <Text style={styles.buttonText}>
+                    Hispânica/Latina
+                </Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.buttonsEach} onPress={() => navigation.navigate('Q5', {
                 value1: navigation.getParam('value1', ''),
@@ -129,15 +127,5 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold",
         color:"#ffffff"
-    },
-    iconBr:{
-        width:35,
-        height:35,
-        marginLeft: 10
-    },
-    brButton: {
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "center"
     }
 })

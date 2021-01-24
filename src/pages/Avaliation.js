@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text, StyleSheet,StatusBar} from 'react-native';
-import {TouchableOpacity } from 'react-native-gesture-handler';
+import {TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
 
 export default ({navigation}) => {
     return(
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <StatusBar hidden={true} />
             <View>
                 <Text style={styles.header}>
@@ -30,7 +30,7 @@ export default ({navigation}) => {
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('WillingnessTool')}>
                     <Text style={styles.textButton}>
                         Escala de adesão a mamografia (RCHBMS)
                     </Text>
@@ -41,7 +41,7 @@ export default ({navigation}) => {
                     OBS.: Além do resultado da escala, deve-se considerar que mulheres de raça preta e amarela, e mulheres com história familiar de câncer estão associadas a não adesão a mamografia. Sendo assim, necessitam de um reforço maior no momento da abordagem preventiva.
                 </Text>
             </View>
-        </View>
+        </ScrollView>
     )
 }
 

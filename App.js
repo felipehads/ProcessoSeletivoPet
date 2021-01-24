@@ -14,7 +14,8 @@ import TrackingHighRisk from './src/pages/Prevention/Secondary/TrackingHighRisk'
 import TrackingGeneralPopulation from './src/pages/Prevention/Secondary/TrackingGeneralPopulation';
 import FirstPage from './src/pages/FirstPage';
 import Avaliation from './src/pages/Avaliation';
-import Calculator from './src/pages/Calculator';
+import Calculator from './src/pages/Calculator/Calculator';
+import WillingnessTool from './src/pages/Willingness/WillingnessTool'
 import Q1 from './src/pages/Calculator/Q1';
 import Q2 from './src/pages/Calculator/Q2';
 import Q3 from './src/pages/Calculator/Q3';
@@ -84,12 +85,16 @@ const navigator = createStackNavigator({
     screen: FirstPage,
     navigationOptions: ({navigation}) => ({})
   },
+  Avaliation:{
+    screen: Avaliation,
+    navigationOptions: ({navigation}) => ({})
+  },
   Calculator:{
     screen: Calculator,
     navigationOptions: ({navigation}) => ({})
   },
-  Avaliation:{
-    screen: Avaliation,
+  WillingnessTool:{
+    screen: WillingnessTool,
     navigationOptions: ({navigation}) => ({})
   },
   Q1: {

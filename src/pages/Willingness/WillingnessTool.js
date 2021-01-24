@@ -9,18 +9,21 @@ export default ({navigation}) => {
             <StatusBar hidden={true} />
             <View style={{marginHorizontal:30}}>
                 <Text style={styles.header}>
-                    FERRAMENTA DE AVALIAÇÃO DE RISCO DE CÂNCER DE MAMA
+                    ESCALA DE ADESÃO À MAMOGRAFIA (RCHBMS)
                 </Text>
             </View>
             <View>
                 <Text style={styles.text}>
-                    Esta ferramenta de avaliação de risco de câncer de mama é baseada em um modelo estatístico conhecido como Modelo Gail. A ferramenta usa as informações pessoais de uma mulher para estimar o risco de desenvolver câncer de mama invasivo em períodos específicos de tempo, incluindo: a idade atual, a idade de inicio de menstruação, a idade do primeiro nascimento vivo de uma criança, o número de parentes de primeiro grau (mãe, irmãs, filhas) com câncer de mama, o número de biópsias mamárias anteriores (sejam positivas ou negativas) e a presença de hiperplasia atípica em uma biópsia.{"\n"} O cálculo apresentado neste aplicativo é feito externamente, utilizando a calculadora "Breast Cancer Risk Assessment Tool" disponível em: {"\n"}https://bcrisktool.cancer.gov/calculator.html
+                    A escala Revised Champion's Health Belief Model (RCHBMS) auxilia na identificação de mulheres com alto risco de não adesão às diretrizes nacionais de mamografia no Brasil.
+                    Para cada uma das afirmativas que serão apresentadas a seguir, é necessário selecionar a resposta que melhor descreve a opinião da avaliada em relação ao seu comportamento frente ao rastreamento para o câncer de mama. 
+                    Não há respostas corretas ou incorretas para as afirmativas.
+                    Para cada resposta é empregado um valor em escala Likert, variando de Discordo completamente a Concordo completamente.
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Q1')}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
                     <Text style={styles.textButton}>
-                        Usar ferramenta
+                        Usar escala
                     </Text>
                 </TouchableOpacity>
             </View>

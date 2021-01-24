@@ -171,7 +171,7 @@ export default ({navigation}) => {
                 absolute
             />
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Homepage')}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Avaliation')}>
                     <Text style={styles.textButton}>
                         Voltar às ferramentas
                     </Text>

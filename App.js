@@ -15,7 +15,17 @@ import TrackingGeneralPopulation from './src/pages/Prevention/Secondary/Tracking
 import FirstPage from './src/pages/FirstPage';
 import Avaliation from './src/pages/Avaliation';
 import Calculator from './src/pages/Calculator/Calculator';
-import WillingnessTool from './src/pages/Willingness/WillingnessTool'
+import WillingnessTool from './src/pages/Willingness/WillingnessTool';
+import W1 from './src/pages/Willingness/W1';
+import W2 from './src/pages/Willingness/W2';
+import W3 from './src/pages/Willingness/W3';
+import W4 from './src/pages/Willingness/W4';
+import W5 from './src/pages/Willingness/W5';
+import W6 from './src/pages/Willingness/W6';
+import W7 from './src/pages/Willingness/W7';
+import WTrans from './src/pages/Willingness/WTrans';
+import Will from './src/pages/Willingness/Will';
+import WillNot from './src/pages/Willingness/WillNot';
 import Q1 from './src/pages/Calculator/Q1';
 import Q2 from './src/pages/Calculator/Q2';
 import Q3 from './src/pages/Calculator/Q3';
@@ -95,6 +105,46 @@ const navigator = createStackNavigator({
   },
   WillingnessTool:{
     screen: WillingnessTool,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W1: {
+    screen: W1,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W2: {
+    screen: W2,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W3: {
+    screen: W3,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W4: {
+    screen: W4,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W5: {
+    screen: W5,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W6: {
+    screen: W6,
+    navigationOptions: ({navigation}) => ({})
+  },
+  W7: {
+    screen: W7,
+    navigationOptions: ({navigation}) => ({})
+  },
+  WTrans: {
+    screen: WTrans,
+    navigationOptions: ({navigation}) => ({})
+  },
+  Will: {
+    screen: Will,
+    navigationOptions: ({navigation}) => ({})
+  },
+  WillNot: {
+    screen: WillNot,
     navigationOptions: ({navigation}) => ({})
   },
   Q1: {

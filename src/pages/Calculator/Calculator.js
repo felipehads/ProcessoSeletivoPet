@@ -14,7 +14,9 @@ export default ({navigation}) => {
             </View>
             <View>
                 <Text style={styles.text}>
-                    Esta ferramenta de avaliação de risco de câncer de mama é baseada em um modelo estatístico conhecido como Modelo Gail, que foi traduzido, adaptado culturalmente e validado para o português brasileiro. A ferramenta usa as informações pessoais de uma mulher para estimar o risco de desenvolver câncer de mama invasivo em períodos específicos de tempo, incluindo: a idade atual, a idade de inicio de menstruação, a idade do primeiro nascimento vivo de uma criança, o número de parentes de primeiro grau (mãe, irmãs, filhas) com câncer de mama, o número de biópsias mamárias anteriores (sejam positivas ou negativas) e a presença de hiperplasia atípica em uma biópsia.{"\n"} O cálculo apresentado neste aplicativo é feito externamente, utilizando a calculadora "Breast Cancer Risk Assessment Tool" disponível em: {"\n"}https://bcrisktool.cancer.gov/calculator.html
+                    Esta ferramenta de avaliação de risco de câncer de mama é baseada em um modelo estatístico conhecido como Modelo Gail, que foi traduzido, adaptado culturalmente e validado para o português brasileiro.
+                    {"\n"}A ferramenta usa as informações pessoais de uma mulher para estimar o risco de desenvolver câncer de mama invasivo em períodos específicos de tempo, incluindo: a idade atual, a idade de inicio de menstruação, a idade do primeiro nascimento vivo de uma criança, o número de parentes de primeiro grau (mãe, irmãs, filhas) com câncer de mama, o número de biópsias mamárias anteriores (sejam positivas ou negativas) e a presença de hiperplasia atípica em uma biópsia.
+                    {"\n"}O cálculo apresentado neste aplicativo é feito externamente, utilizando a calculadora "Breast Cancer Risk Assessment Tool" disponível em: {"\n"}https://bcrisktool.cancer.gov/calculator.html
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>

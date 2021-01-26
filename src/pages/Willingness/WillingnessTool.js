@@ -15,13 +15,13 @@ export default ({navigation}) => {
             <View>
                 <Text style={styles.text}>
                     A escala Revised Champion's Health Belief Model (RCHBMS) auxilia na identificação de mulheres com alto risco de não adesão às diretrizes nacionais de mamografia no Brasil.
-                    Para cada uma das afirmativas que serão apresentadas a seguir, é necessário selecionar a resposta que melhor descreve a opinião da avaliada em relação ao seu comportamento frente ao rastreamento para o câncer de mama. 
-                    Não há respostas corretas ou incorretas para as afirmativas.
-                    Para cada resposta é empregado um valor em escala Likert, variando de Discordo completamente a Concordo completamente.
+                    {"\n"}Para cada uma das afirmativas que serão apresentadas a seguir, é necessário selecionar a resposta que melhor descreve a opinião da avaliada em relação ao seu comportamento frente ao rastreamento para o câncer de mama. 
+                    {"\n"}Não há respostas corretas ou incorretas para as afirmativas.
+                    {"\n"}Para cada resposta é empregado um valor em escala Likert, variando de Discordo completamente a Concordo completamente.
                 </Text>
             </View>
             <View style={styles.buttonsContainer}>
-                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('')}>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('W1')}>
                     <Text style={styles.textButton}>
                         Usar escala
                     </Text>

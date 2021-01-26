@@ -15,7 +15,7 @@ export default ({navigation}) => {
             Barreiras
         </Text>
         <Text style={styles.text}>
-            Eu tenho medo de fazer uma mamografia porque não entendo o que vai ser feito. {navigation.getParam('sus', 0)} {navigation.getParam('ben', 0)} {navigation.getParam('bar', 0)}
+            Eu tenho medo de fazer uma mamografia porque não entendo o que vai ser feito.
         </Text>
         <View style={styles.buttonsContainer}>
             <TouchableOpacity style={styles.buttonsEach}onPress={() => navigation.navigate('WTrans', {

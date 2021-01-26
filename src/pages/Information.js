@@ -24,15 +24,17 @@ export default ({navigation}) => {
 
 const styles = StyleSheet.create({
     headerContainer:{
-        alignItems: "center"
+        alignItems: "center",
+        marginBottom: 40,
+        marginHorizontal: 20
     },
     headerText: {
-        top: 94,
         fontSize: 34,
         textAlign: "center",
         letterSpacing: -0.82,
         color: "#ee88b6",
-        opacity: 1
+        opacity: 1,
+        fontWeight: "bold"
     },
     container: {
         flex: 1,
@@ -41,7 +43,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#ffffff"
     },
     buttonsContainer: {
-        flex: 1,
         alignItems: "center",
         justifyContent: "center"
     }

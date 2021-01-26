@@ -5,7 +5,7 @@ import {TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
 export default ({navigation}) => {
     return(
-        <ScrollView style={styles.container}>
+        <View style={styles.container}>
             <StatusBar hidden={true} />
             <View style={{marginHorizontal:30}}>
                 <Text style={styles.header}>
@@ -27,13 +27,14 @@ export default ({navigation}) => {
                     </Text>
                 </TouchableOpacity>
             </View>
-        </ScrollView>
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         flex:1,
+        justifyContent: "center",
         backgroundColor: "#ffffff"
     },
     header: {

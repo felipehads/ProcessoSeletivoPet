@@ -60,7 +60,9 @@ const styles = StyleSheet.create({
     text:{
         fontSize:20,
         textAlign: "center",
-        marginHorizontal: 10
+        marginHorizontal: 10,
+        letterSpacing: -0.43,
+        lineHeight: 41,
     },
     Boldtext:{
         fontSize:24,
@@ -75,7 +77,8 @@ const styles = StyleSheet.create({
     buttonsContainer:{
         flexDirection:"column",
         justifyContent:"flex-end",
-        alignItems:"center"
+        alignItems:"center",
+        marginBottom: 20
     },
     button: {
         backgroundColor: "#ee88b6",

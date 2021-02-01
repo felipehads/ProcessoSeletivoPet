@@ -36,11 +36,6 @@ export default ({navigation}) => {
                     </Text>
                 </TouchableOpacity>
             </View>
-            <View>
-                <Text style={styles.text}>
-                    OBS.: Além do resultado da escala, deve-se considerar que mulheres de raça preta e amarela, e mulheres com história familiar de câncer estão associadas a não adesão a mamografia. Sendo assim, necessitam de um reforço maior no momento da abordagem preventiva.
-                </Text>
-            </View>
         </ScrollView>
     )
 }
@@ -60,6 +55,8 @@ const styles = StyleSheet.create({
     text:{
         fontSize: 16,
         textAlign:"center",
+        letterSpacing: -0.43,
+        lineHeight: 41,
         margin: 20,
         fontWeight:"600"
     },

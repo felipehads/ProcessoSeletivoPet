@@ -47,6 +47,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlign:"center",
         margin: 20,
+        letterSpacing: -0.43,
+        lineHeight: 41,
     },
     buttonsContainer:{
         flexDirection:"column",

@@ -5,9 +5,9 @@ import {TouchableOpacity, ScrollView } from 'react-native-gesture-handler';
 
 export default ({navigation}) => {
     return(
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <StatusBar hidden={true} />
-            <View style={{marginHorizontal:30}}>
+            <View style={{marginHorizontal:30, marginTop: 30}}>
                 <Text style={styles.header}>
                     ESCALA DE ADESÃO À MAMOGRAFIA (RCHBMS)
                 </Text>
@@ -27,14 +27,13 @@ export default ({navigation}) => {
                     </Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </ScrollView>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
         flex:1,
-        justifyContent: "center",
         backgroundColor: "#ffffff"
     },
     header: {
@@ -48,6 +47,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
         textAlign:"center",
         margin: 20,
+        letterSpacing: -0.43,
+        lineHeight: 41,
     },
     buttonsContainer:{
         flexDirection:"column",

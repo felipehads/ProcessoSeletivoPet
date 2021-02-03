@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View,Text, StyleSheet, StatusBar, Modal} from 'react-native';
+import {View,Text, StyleSheet, StatusBar, Modal } from 'react-native';
 import NewButton from '../components/NewButton';
 
 
@@ -12,12 +12,12 @@ const Homepage = ({navigation}) => {
         <View style={styles.container}> 
             <StatusBar hidden={true} />
             
-            <View style={{position: 'absolute'}}>
+            <View style={{flex: 0.4,position: 'relative'}}>
                 <Modal
                 transparent={true}
                 visible = {visible}
                 >
-                    <View style={{flex:0.4,backgroundColor: 'pink', alignItems: 'center', justifyContent: 'center', marginHorizontal: 30, marginTop: 10,borderRadius: 20, paddingHorizontal: 40, paddingVertical: 70}}>
+                    <View style={{position: "absolute",flex:1,backgroundColor: 'pink', alignItems: 'center', justifyContent: 'center', marginHorizontal: 30, marginTop: 10,borderRadius: 20, paddingHorizontal: 40, paddingVertical: 40}}>
                         <Text style={{textAlign: 'center', marginVertical: 10, fontSize: 16}}>Atenção!{"\n"}{"\n"}
                         Você profissional de saúde também precisa se cuidar!{"\n"}{"\n"}
                         Fique atento as recomendações quanto a presença de sinais e sintomas, fatores de risco e periodicidade dos exames para rastreamento e detecção precoce do câncer de mama.{"\n"}{"\n"}
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
         flex:1,
         flexDirection: "column",
         backgroundColor: "#ffffff",
-        justifyContent: "center"
+        justifyContent: "center",
     },
     text:{
         textAlign:"center",
